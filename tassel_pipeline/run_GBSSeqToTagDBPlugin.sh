@@ -18,7 +18,7 @@ module load tassel5
 # Working directory
 WD=
 # Name of input directory with fastqs
-INPUT=$WD/input
+INPUT=$WD/input/fastq_files
 # Name of database
 DBNAME=$WD/database/cranberry_gbs_discovery.db
 # Name of keyfile
