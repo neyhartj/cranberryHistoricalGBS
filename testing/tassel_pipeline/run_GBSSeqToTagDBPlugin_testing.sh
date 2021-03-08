@@ -16,7 +16,7 @@ module load tassel5
 
 ## Set variables
 # Working directory
-WD=/project/cranberrygbs/cranberryHistoricalGBS/
+WD=/project/cranberrygbs/cranberryHistoricalGBS/testing/
 # Name of input directory with fastqs
 INPUT=$WD/input/fastq_files
 # Name of database
@@ -26,10 +26,8 @@ KEY=$INPUT/cranberry_gbs_all_keys.txt
 
 
 
-
-
 # Execute the plugin
-./run_pipeline.pl -Xms100G -Xmx200G -fork1 -GBSSeqToTagDBPlugin \
+./run_pipeline.pl -Xms1G -Xmx4G -fork1 -GBSSeqToTagDBPlugin \
 -c 10 \
 -db $DBNAME \
 -i $INPUT \
