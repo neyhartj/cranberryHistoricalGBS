@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-=======
+.Rproj.use
+.Rhistor
+.RDat
+.Ruserdat
 input/fastq_files/
->>>>>>> 4fbeb8c60fa80b5468e59f998547ecd2afb40d23
+testing/input/fastq_files/
