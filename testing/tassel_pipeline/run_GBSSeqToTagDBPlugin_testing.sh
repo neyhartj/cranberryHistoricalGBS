@@ -1,10 +1,27 @@
 #!/bin/bash
 
+# SLURM parameters
+# job standard output will go to the file slurm-%j.out (where %j is the job ID)
+
+#SBATCH --time=04:00:00   # walltime limit (HH:MM:SS)
+#SBATCH --nodes=1   # number of nodes
+#SBATCH --ntasks-per-node=2   # 1 processor core(s) per node X 2 threads per core
+#SBATCH --mem=6400M   # maximum memory per node
+#SBATCH --partition=short    # standard node(s)
+#SBATCH --job-name="GBSSeqToTagDBPlugin_testing"
+#SBATCH --mail-user=jeffrey.neyhart@usda.gov   # email address
+#SBATCH --mail-type=BEGIN
+#SBATCH --mail-type=END
+#SBATCH --mail-type=FAIL
+
+
+## 
 ## TASSEL5 pipeline for cranberry GBS
 ## 
 ## GBSSeqToTagDBPlugin
 ## 
 ## 
+
 
 # Set error handling options
 set -e
