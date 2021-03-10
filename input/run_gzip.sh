@@ -35,9 +35,10 @@ cd $FASTQDIR
 files=$(find . -name "*_fastq")
 
 # Loop over files
-for fi in $files; do
+for file in $files; do
   # gzip
-  gzip $fi
+  #echo $file
+  gzip $file
   
 done
 
