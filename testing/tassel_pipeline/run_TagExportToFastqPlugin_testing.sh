@@ -52,3 +52,6 @@ run_pipeline.pl -Xms1G -Xmx4G -fork1 -TagExportToFastqPlugin \
 -o $OUTDIR/gbs_tags_for_alignment.fa.gz \
 -endPlugin -runfork1
 
+# Unzip the fasta file
+gunzip $OUTDIR/gbs_tags_for_alignment.fa.gz
+

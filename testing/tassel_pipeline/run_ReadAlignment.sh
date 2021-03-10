@@ -35,23 +35,23 @@ module load bowtie2
 # Working directory
 WD=/project/cranberrygbs/cranberryHistoricalGBS/testing/
 # Name of tag fasta
-TAGFASTA=$WD/tags/gbs_tags_for_alignment.fa.gz
+TAGFASTA=$WD/tags/gbs_tags_for_alignment.fa
 # Name of output sam file
-SAMOUT=$WD/tags/gbs_tags_aligned.sam
+SAMOUT=$WD/tags/gbs_tags_aligned_BenLearv2.sam
+SAMOUT1=$WD/tags/gbs_tags_aligned_Stevensv1.sam
 # Basename of reference index
 REFIND=/KEEP/cranberrygbs/genome_assemblies/Vm_BenLear_v2_bowtie_index/Vaccinium_macrocarpon_BenLear_v2
+REFIND1=/KEEP/cranberrygbs/genome_assemblies/Vm_Stevens_v1_bowtie_index/Vaccinium_macrocarpon_Stevens_v1
+
 
 # Change working directory
 cd $WD
 
 # Run the alignment
-bowtie2 \
--p 8 \ 
--f \
---sensitive \
--x $REFIND \ 
--U $TAGFASTA \
--S $SAMOUT
+bowtie2 -p 8 --sensitive -x $REFIND -U $TAGFASTA -S $SAMOUT
+
+# Alternative
+bowtie2 -p 8 --sensitive -x $REFIND1 -U $TAGFASTA -S $SAMOUT1
 
 
 
