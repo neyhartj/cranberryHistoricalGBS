@@ -1,0 +1,97 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+/software/7/apps/tassel5/5.2.37/lib/commons-codec-1.10.jar:/software/7/apps/tassel5/5.2.37/lib/javax.json-1.0.4.jar:/software/7/apps/tassel5/5.2.37/lib/xml.jar:/software/7/apps/tassel5/5.2.37/lib/batik-awt-util.jar:/software/7/apps/tassel5/5.2.37/lib/json-simple-1.1.1.jar:/software/7/apps/tassel5/5.2.37/lib/colt.jar:/software/7/apps/tassel5/5.2.37/lib/ahocorasick-0.2.4.jar:/software/7/apps/tassel5/5.2.37/lib/batik-ext.jar:/software/7/apps/tassel5/5.2.37/lib/slf4j-api-1.7.10.jar:/software/7/apps/tassel5/5.2.37/lib/geronimo-spec-activation-1.0.2-rc4.jar:/software/7/apps/tassel5/5.2.37/lib/batik-svg-dom.jar:/software/7/apps/tassel5/5.2.37/lib/sqlite-jdbc-3.8.5-pre1.jar:/software/7/apps/tassel5/5.2.37/lib/jcommon-1.0.23.jar:/software/7/apps/tassel5/5.2.37/lib/batik-dom.jar:/software/7/apps/tassel5/5.2.37/lib/ejml-0.23.jar:/software/7/apps/tassel5/5.2.37/lib/cisd-jhdf5-batteries_included_lin_win_mac.jar:/software/7/apps/tassel5/5.2.37/lib/forester.jar:/software/7/apps/tassel5/5.2.37/lib/batik-gvt.jar:/software/7/apps/tassel5/5.2.37/lib/batik-gui-util.jar:/software/7/apps/tassel5/5.2.37/lib/batik-svggen.jar:/software/7/apps/tassel5/5.2.37/lib/htsjdk-1.138.jar:/software/7/apps/tassel5/5.2.37/lib/postgresql-9.4-1201.jdbc41.jar:/software/7/apps/tassel5/5.2.37/lib/snappy-java-1.1.1.6.jar:/software/7/apps/tassel5/5.2.37/lib/mail-1.4.jar:/software/7/apps/tassel5/5.2.37/lib/guava-19.0.jar:/software/7/apps/tassel5/5.2.37/lib/xercesImpl.jar:/software/7/apps/tassel5/5.2.37/lib/xmlParserAPIs.jar:/software/7/apps/tassel5/5.2.37/lib/batik-parser.jar:/software/7/apps/tassel5/5.2.37/lib/trove-3.0.3.jar:/software/7/apps/tassel5/5.2.37/lib/batik-xml.jar:/software/7/apps/tassel5/5.2.37/lib/batik-css.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-alignment-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-core-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/commons-math3-3.4.1.jar:/software/7/apps/tassel5/5.2.37/lib/poi-3.0.1-FINAL-20070705.jar:/software/7/apps/tassel5/5.2.37/lib/itextpdf-5.1.0.jar:/software/7/apps/tassel5/5.2.37/lib/batik-util.jar:/software/7/apps/tassel5/5.2.37/lib/log4j-1.2.13.jar:/software/7/apps/tassel5/5.2.37/lib/slf4j-simple-1.7.10.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-phylo-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/jfreechart-1.0.19.jar:/software/7/apps/tassel5/5.2.37/lib/junit-4.10.jar:/software/7/apps/tassel5/5.2.37/sTASSEL.jar
+Memory Settings: -Xms1G -Xmx4G
+Tassel Pipeline Arguments: -fork1 -GBSSeqToTagDBPlugin -c 10 -db /project/cranberrygbs/cranberryHistoricalGBS/testing//database/cranberry_gbs_discovery.db -i /project/cranberrygbs/cranberryHistoricalGBS/testing//input -k /project/cranberrygbs/cranberryHistoricalGBS/testing//input/C8BNLANXX_1_keyfile.txt -e EcoT22I -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
+[main] INFO net.maizegenetics.tassel.TasselLogging - Tassel Version: 5.2.37  Date: April 6, 2017
+[main] INFO net.maizegenetics.tassel.TasselLogging - Max Available Memory Reported by JVM: 3641 MB
+[main] INFO net.maizegenetics.tassel.TasselLogging - Java Version: 1.8.0_121
+[main] INFO net.maizegenetics.tassel.TasselLogging - OS: Linux
+[main] INFO net.maizegenetics.tassel.TasselLogging - Number of Processors: 72
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Pipeline Arguments: [-fork1, -GBSSeqToTagDBPlugin, -c, 10, -db, /project/cranberrygbs/cranberryHistoricalGBS/testing//database/cranberry_gbs_discovery.db, -i, /project/cranberrygbs/cranberryHistoricalGBS/testing//input, -k, /project/cranberrygbs/cranberryHistoricalGBS/testing//input/C8BNLANXX_1_keyfile.txt, -e, EcoT22I, -kmerLength, 64, -minKmerL, 20, -mnQS, 20, -mxKmerNum, 100000000, -endPlugin, -runfork1]
+net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin: time: Mar 9, 2021 15:14:48
+Enzyme: EcoT22I
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - 
+GBSSeqToTagDBPlugin Parameters
+i: /project/cranberrygbs/cranberryHistoricalGBS/testing//input
+k: /project/cranberrygbs/cranberryHistoricalGBS/testing//input/C8BNLANXX_1_keyfile.txt
+e: EcoT22I
+kmerLength: 64
+minKmerL: 20
+c: 10
+db: /project/cranberrygbs/cranberryHistoricalGBS/testing//database/cranberry_gbs_discovery.db
+mnQS: 20
+mxKmerNum: 100000000
+batchSize: 8
+deleteOldData: true
+
+Found 1 files to process
+size of all tags in tag table=0
+size of all tissues in tissue table=0
+size of all tags in mappingApproach table=0
+size of all taxa in taxa table=0
+
+Start processing batch 1
+Enzyme: EcoT22I
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/testing/input/fastq_files/C8BNLANXX_1_fastq.gz
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/testing/input/fastq_files/C8BNLANXX_1_fastq.gz: Quality score base:33
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:10000000 Reads with barcode and cut site overhang:5716447 rate:10816 ns/read. Current tag count:322683
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:20000000 Reads with barcode and cut site overhang:11401263 rate:9638 ns/read. Current tag count:510468
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:40000000 Reads with barcode and cut site overhang:21573572 rate:9198 ns/read. Current tag count:829184
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:70000000 Reads with barcode and cut site overhang:36622505 rate:8790 ns/read. Current tag count:1194080
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:80000000 Reads with barcode and cut site overhang:41995262 rate:8794 ns/read. Current tag count:1308476
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:90000000 Reads with barcode and cut site overhang:47335702 rate:9052 ns/read. Current tag count:1418130
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:57019770 rate:8912 ns/read. Current tag count:1607008
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:120000000 Reads with barcode and cut site overhang:61509568 rate:8854 ns/read. Current tag count:1690372
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:75571040 rate:8947 ns/read. Current tag count:1934587
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:160000000 Reads with barcode and cut site overhang:80690371 rate:8901 ns/read. Current tag count:2017874
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:170000000 Reads with barcode and cut site overhang:86943051 rate:8870 ns/read. Current tag count:2116485
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:200000000 Reads with barcode and cut site overhang:105259862 rate:9059 ns/read. Current tag count:2386029
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:111446969 rate:9024 ns/read. Current tag count:2472277
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:220000000 Reads with barcode and cut site overhang:117804277 rate:9028 ns/read. Current tag count:2559423
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:230000000 Reads with barcode and cut site overhang:123654918 rate:9013 ns/read. Current tag count:2636021
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:240000000 Reads with barcode and cut site overhang:129684613 rate:9192 ns/read. Current tag count:2714369
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:135602967 rate:9161 ns/read. Current tag count:2789255
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:270000000 Reads with barcode and cut site overhang:146794499 rate:9102 ns/read. Current tag count:2950719
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/testing/input/fastq_files/C8BNLANXX_1_fastq.gz
+Total number of reads in lane=293564717
+Total number of good barcoded reads=159723306
+Total number of low quality reads=108893679
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 2657907.354611 milliseconds.
+tagCntMap size: 3102621
+
+Kmers are added from batch 1. Total batch number: 1
+Current number: 3102621. Max kmer number: 100000000
+0.03102621 of max tag number
+Map Tags:3,102,621  Memory:691,529,931  TotalDepth:159,723,306  AvgDepthPerTag:51
+
+Starting removeTagsWithoutReplication. Current tag number: 3102621
+Finished removeTagsWithoutReplication.  tagsRemoved = 2930804. Current tag number: 171817
+Map Tags:171,817  Memory:394,983,321  TotalDepth:154,170,818  AvgDepthPerTag:897
+
+Kmer number is reduced to 171817
+
+Total memory: 3.0 Gb
+Free memory: 0.0 Gb
+Max memory: 3.0 Gb
+
+
+
+All the batch are processed
+By removing kmers with minCount of 10Kmer number is reduced to 159915
+
+size of all taxa in taxa table=96
+tagInsertPS.executeBatch() 100001
+size of all tags in tag table=159915
+putTaxaDistribution next100001
+Closing SQLDB
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin: time: Mar 9, 2021 15:59:33
+[pool-1-thread-1] INFO net.maizegenetics.pipeline.TasselPipeline - net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin: time: Mar 9, 2021 15:59:33: progress: 100%
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin  Citation: Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) TASSEL: Software for association mapping of complex traits in diverse samples. Bioinformatics 23:2633-2635.

@@ -4,4 +4,6 @@
 .Ruserdat
 input/fastq_files/
 testing/input/fastq_files/
+testing/tags/
+testing/database/
 .Rproj.user

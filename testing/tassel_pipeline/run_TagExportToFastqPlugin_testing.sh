@@ -36,6 +36,8 @@ module load tassel5
 WD=/project/cranberrygbs/cranberryHistoricalGBS/testing/
 # Name of database
 DBNAME=$WD/database/cranberry_gbs_discovery.db
+# Directory to store fa file
+OUTDIR=$WD/tags
 
 
 
@@ -47,6 +49,6 @@ cd $WD
 run_pipeline.pl -Xms1G -Xmx4G -fork1 -TagExportToFastqPlugin \
 -c 1 \
 -db $DBNAME \
--o $WD/gbs_tags_for_alignment.fa.gz \
+-o $OUTDIR/gbs_tags_for_alignment.fa.gz \
 -endPlugin -runfork1
 
