@@ -46,10 +46,7 @@ cd $WD
 
 # Execute the plugin
 run_pipeline.pl -Xms1G -Xmx4G -fork1 -DiscoverySNPCallerPluginV2 \
--callBiSNPsWGap false \
 -db $DBNAME \
--inclGaps false \
--inclRare false \
 -maxTagsCutSite 1000 \
 -mnLCov 0.1 \
 -mnMAF 0.00001 \
