@@ -6,4 +6,5 @@ input/fastq_files/
 testing/input/fastq_files/
 testing/tags/
 testing/database/
+testing/alignment/
 .Rproj.user
