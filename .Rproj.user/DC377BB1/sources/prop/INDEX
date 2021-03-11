@@ -2,6 +2,7 @@
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Finput%2Frun_gzip.sh="A300B0A2"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftassel_pipeline%2Frun_GBSSeqToTagDBPlugin.sh="35BC6528"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftassel_pipeline%2Frun_installer.sh="5BFF9D24"
+~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_DiscoverySNPCallerPluginV2.sh="9D8BB83E"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_GBSSeqToTagDBPlugin_testing.sh="FF53EA06"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_ReadAlignment.sh="71B2A3D4"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_SAMToGBSdbPlugin.sh="D9C21367"
