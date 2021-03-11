@@ -1,5 +1,7 @@
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2F.gitignore="281A714F"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Finput%2Frun_gzip.sh="A300B0A2"
+~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftassel_pipeline%2Frun_01_GBSSeqToTagDBPlugin.sh="1970936B"
+~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftassel_pipeline%2Frun_02_TagExportToFastqPlugin.sh="D7B037A0"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftassel_pipeline%2Frun_GBSSeqToTagDBPlugin.sh="35BC6528"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftassel_pipeline%2Frun_installer.sh="5BFF9D24"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Fstats%2Fanalyze_snp_stats.R="36ACB89B"

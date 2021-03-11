@@ -3,6 +3,11 @@
 .RDat
 .Ruserdat
 input/fastq_files/
+database/
+tags/
+snps/
+stats/
+alignment/
 testing/input/fastq_files/
 testing/tags/
 testing/database/
