@@ -6,4 +6,5 @@
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_GBSSeqToTagDBPlugin_testing.sh="FF53EA06"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_ReadAlignment.sh="71B2A3D4"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_SAMToGBSdbPlugin.sh="D9C21367"
+~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_SNPQualityProfilerPlugin.sh="7D9414C6"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_TagExportToFastqPlugin_testing.sh="82C29B1D"
