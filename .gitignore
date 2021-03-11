@@ -7,4 +7,5 @@ testing/input/fastq_files/
 testing/tags/
 testing/database/
 testing/alignment/
+testing/snps
 .Rproj.user

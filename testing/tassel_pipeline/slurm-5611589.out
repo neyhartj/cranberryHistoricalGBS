@@ -1,0 +1,337 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+/software/7/apps/tassel5/5.2.37/lib/commons-codec-1.10.jar:/software/7/apps/tassel5/5.2.37/lib/javax.json-1.0.4.jar:/software/7/apps/tassel5/5.2.37/lib/xml.jar:/software/7/apps/tassel5/5.2.37/lib/batik-awt-util.jar:/software/7/apps/tassel5/5.2.37/lib/json-simple-1.1.1.jar:/software/7/apps/tassel5/5.2.37/lib/colt.jar:/software/7/apps/tassel5/5.2.37/lib/ahocorasick-0.2.4.jar:/software/7/apps/tassel5/5.2.37/lib/batik-ext.jar:/software/7/apps/tassel5/5.2.37/lib/slf4j-api-1.7.10.jar:/software/7/apps/tassel5/5.2.37/lib/geronimo-spec-activation-1.0.2-rc4.jar:/software/7/apps/tassel5/5.2.37/lib/batik-svg-dom.jar:/software/7/apps/tassel5/5.2.37/lib/sqlite-jdbc-3.8.5-pre1.jar:/software/7/apps/tassel5/5.2.37/lib/jcommon-1.0.23.jar:/software/7/apps/tassel5/5.2.37/lib/batik-dom.jar:/software/7/apps/tassel5/5.2.37/lib/ejml-0.23.jar:/software/7/apps/tassel5/5.2.37/lib/cisd-jhdf5-batteries_included_lin_win_mac.jar:/software/7/apps/tassel5/5.2.37/lib/forester.jar:/software/7/apps/tassel5/5.2.37/lib/batik-gvt.jar:/software/7/apps/tassel5/5.2.37/lib/batik-gui-util.jar:/software/7/apps/tassel5/5.2.37/lib/batik-svggen.jar:/software/7/apps/tassel5/5.2.37/lib/htsjdk-1.138.jar:/software/7/apps/tassel5/5.2.37/lib/postgresql-9.4-1201.jdbc41.jar:/software/7/apps/tassel5/5.2.37/lib/snappy-java-1.1.1.6.jar:/software/7/apps/tassel5/5.2.37/lib/mail-1.4.jar:/software/7/apps/tassel5/5.2.37/lib/guava-19.0.jar:/software/7/apps/tassel5/5.2.37/lib/xercesImpl.jar:/software/7/apps/tassel5/5.2.37/lib/xmlParserAPIs.jar:/software/7/apps/tassel5/5.2.37/lib/batik-parser.jar:/software/7/apps/tassel5/5.2.37/lib/trove-3.0.3.jar:/software/7/apps/tassel5/5.2.37/lib/batik-xml.jar:/software/7/apps/tassel5/5.2.37/lib/batik-css.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-alignment-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-core-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/commons-math3-3.4.1.jar:/software/7/apps/tassel5/5.2.37/lib/poi-3.0.1-FINAL-20070705.jar:/software/7/apps/tassel5/5.2.37/lib/itextpdf-5.1.0.jar:/software/7/apps/tassel5/5.2.37/lib/batik-util.jar:/software/7/apps/tassel5/5.2.37/lib/log4j-1.2.13.jar:/software/7/apps/tassel5/5.2.37/lib/slf4j-simple-1.7.10.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-phylo-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/jfreechart-1.0.19.jar:/software/7/apps/tassel5/5.2.37/lib/junit-4.10.jar:/software/7/apps/tassel5/5.2.37/sTASSEL.jar
+Memory Settings: -Xms1G -Xmx4G
+Tassel Pipeline Arguments: -fork1 -ProductionSNPCallerPluginV2 -db /project/cranberrygbs/cranberryHistoricalGBS/testing//database/cranberry_gbs_discovery.db -e EcoT22I -i /project/cranberrygbs/cranberryHistoricalGBS/testing//input/fastq_files -k /project/cranberrygbs/cranberryHistoricalGBS/testing//input/C8BNLANXX_1_keyfile.txt -kmerLength 64 -do true -o /project/cranberrygbs/cranberryHistoricalGBS/testing//snps/cranberryGBS_production_snps_testing.vcf -endPlugin -runfork1
+[main] INFO net.maizegenetics.tassel.TasselLogging - Tassel Version: 5.2.37  Date: April 6, 2017
+[main] INFO net.maizegenetics.tassel.TasselLogging - Max Available Memory Reported by JVM: 3641 MB
+[main] INFO net.maizegenetics.tassel.TasselLogging - Java Version: 1.8.0_121
+[main] INFO net.maizegenetics.tassel.TasselLogging - OS: Linux
+[main] INFO net.maizegenetics.tassel.TasselLogging - Number of Processors: 72
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Pipeline Arguments: [-fork1, -ProductionSNPCallerPluginV2, -db, /project/cranberrygbs/cranberryHistoricalGBS/testing//database/cranberry_gbs_discovery.db, -e, EcoT22I, -i, /project/cranberrygbs/cranberryHistoricalGBS/testing//input/fastq_files, -k, /project/cranberrygbs/cranberryHistoricalGBS/testing//input/C8BNLANXX_1_keyfile.txt, -kmerLength, 64, -do, true, -o, /project/cranberrygbs/cranberryHistoricalGBS/testing//snps/cranberryGBS_production_snps_testing.vcf, -endPlugin, -runfork1]
+net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2: time: Mar 11, 2021 12:24:4
+
+
+Enzyme: EcoT22I
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - 
+ProductionSNPCallerPluginV2 Parameters
+i: /project/cranberrygbs/cranberryHistoricalGBS/testing//input/fastq_files
+k: /project/cranberrygbs/cranberryHistoricalGBS/testing//input/C8BNLANXX_1_keyfile.txt
+e: EcoT22I
+db: /project/cranberrygbs/cranberryHistoricalGBS/testing//database/cranberry_gbs_discovery.db
+o: /project/cranberrygbs/cranberryHistoricalGBS/testing//snps/cranberryGBS_production_snps_testing.vcf
+eR: 0.01
+d: 0
+ko: false
+do: true
+kmerLength: 64
+minPosQS: 0.0
+batchSize: 8
+mnQS: 0
+
+size of all tags in tag table=159915
+size of all tissues in tissue table=0
+size of all tags in mappingApproach table=2
+size of all taxa in taxa table=96
+ProductionSNPCallerPluginV2: Total batches to process: 1
+size of all positions in snpPosition table=22493
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - 
+Output VCF file: 
+/project/cranberrygbs/cranberryHistoricalGBS/testing//snps/cranberryGBS_production_snps_testing.vcf 
+created for genotypes from this run.
+size of all positions in snpPosition table=22493
+size of all alleles in allele table=45217
+
+Start processing batch 1
+Enzyme: EcoT22I
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/testing/input/fastq_files/C8BNLANXX_1_fastq.gz: Quality score base:33
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:1000000 Reads with barcode and cut site overhang:910475 rate:5490 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:2000000 Reads with barcode and cut site overhang:1819622 rate:4829 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:5000000 Reads with barcode and cut site overhang:4555558 rate:4487 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:7000000 Reads with barcode and cut site overhang:6386778 rate:4393 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:8000000 Reads with barcode and cut site overhang:7306048 rate:4355 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:9000000 Reads with barcode and cut site overhang:8219962 rate:4331 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:10000000 Reads with barcode and cut site overhang:9132363 rate:4325 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:11000000 Reads with barcode and cut site overhang:10043347 rate:4309 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:12000000 Reads with barcode and cut site overhang:10951952 rate:4289 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:13000000 Reads with barcode and cut site overhang:11867557 rate:4273 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:14000000 Reads with barcode and cut site overhang:12782162 rate:4260 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:15000000 Reads with barcode and cut site overhang:13690343 rate:4246 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:16000000 Reads with barcode and cut site overhang:14600429 rate:4257 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:17000000 Reads with barcode and cut site overhang:15509223 rate:4253 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:18000000 Reads with barcode and cut site overhang:16415048 rate:4235 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:19000000 Reads with barcode and cut site overhang:17334053 rate:4226 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:20000000 Reads with barcode and cut site overhang:18249709 rate:4212 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:21000000 Reads with barcode and cut site overhang:19162000 rate:4207 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:22000000 Reads with barcode and cut site overhang:20080621 rate:4198 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:23000000 Reads with barcode and cut site overhang:20998621 rate:4195 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:24000000 Reads with barcode and cut site overhang:21909955 rate:4183 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:25000000 Reads with barcode and cut site overhang:22815324 rate:4180 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:26000000 Reads with barcode and cut site overhang:23720109 rate:4174 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:27000000 Reads with barcode and cut site overhang:24620428 rate:4175 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:28000000 Reads with barcode and cut site overhang:25528008 rate:4171 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:29000000 Reads with barcode and cut site overhang:26434474 rate:4164 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:31000000 Reads with barcode and cut site overhang:28242826 rate:4160 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:32000000 Reads with barcode and cut site overhang:29149751 rate:4161 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:33000000 Reads with barcode and cut site overhang:30050085 rate:4157 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:34000000 Reads with barcode and cut site overhang:30952017 rate:4157 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:35000000 Reads with barcode and cut site overhang:31853007 rate:4157 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:36000000 Reads with barcode and cut site overhang:32749000 rate:4149 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:37000000 Reads with barcode and cut site overhang:33646294 rate:4147 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:38000000 Reads with barcode and cut site overhang:34543055 rate:4148 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:39000000 Reads with barcode and cut site overhang:35438131 rate:4146 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:40000000 Reads with barcode and cut site overhang:36343410 rate:4147 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:42000000 Reads with barcode and cut site overhang:38164953 rate:4147 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:43000000 Reads with barcode and cut site overhang:39073168 rate:4143 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:44000000 Reads with barcode and cut site overhang:39984749 rate:4144 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:45000000 Reads with barcode and cut site overhang:40896616 rate:4146 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:46000000 Reads with barcode and cut site overhang:41777468 rate:4146 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:47000000 Reads with barcode and cut site overhang:42653341 rate:4141 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:49000000 Reads with barcode and cut site overhang:44406413 rate:4138 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:50000000 Reads with barcode and cut site overhang:45294188 rate:4137 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:52000000 Reads with barcode and cut site overhang:47070937 rate:4130 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:53000000 Reads with barcode and cut site overhang:47982281 rate:4131 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:54000000 Reads with barcode and cut site overhang:48893400 rate:4133 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:55000000 Reads with barcode and cut site overhang:49786558 rate:4130 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:56000000 Reads with barcode and cut site overhang:50655040 rate:4122 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:57000000 Reads with barcode and cut site overhang:51518102 rate:4119 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:58000000 Reads with barcode and cut site overhang:52378842 rate:4117 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:59000000 Reads with barcode and cut site overhang:53289422 rate:4115 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:60000000 Reads with barcode and cut site overhang:54196565 rate:4112 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:61000000 Reads with barcode and cut site overhang:55102408 rate:4112 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:62000000 Reads with barcode and cut site overhang:56005255 rate:4107 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:63000000 Reads with barcode and cut site overhang:56911194 rate:4102 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:64000000 Reads with barcode and cut site overhang:57817309 rate:4101 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:65000000 Reads with barcode and cut site overhang:58734431 rate:4100 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:66000000 Reads with barcode and cut site overhang:59659696 rate:4100 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:67000000 Reads with barcode and cut site overhang:60584923 rate:4101 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:68000000 Reads with barcode and cut site overhang:61505179 rate:4100 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:69000000 Reads with barcode and cut site overhang:62429677 rate:4102 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:70000000 Reads with barcode and cut site overhang:63354107 rate:4104 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:71000000 Reads with barcode and cut site overhang:64250485 rate:4103 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:72000000 Reads with barcode and cut site overhang:65146230 rate:4103 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:73000000 Reads with barcode and cut site overhang:66041171 rate:4104 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:74000000 Reads with barcode and cut site overhang:66938313 rate:4104 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:75000000 Reads with barcode and cut site overhang:67840595 rate:4105 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:76000000 Reads with barcode and cut site overhang:68742322 rate:4105 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:77000000 Reads with barcode and cut site overhang:69650258 rate:4105 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:78000000 Reads with barcode and cut site overhang:70573272 rate:4106 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:79000000 Reads with barcode and cut site overhang:71496141 rate:4103 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:80000000 Reads with barcode and cut site overhang:72397839 rate:4102 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:81000000 Reads with barcode and cut site overhang:73290119 rate:4102 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:82000000 Reads with barcode and cut site overhang:74176726 rate:4101 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:83000000 Reads with barcode and cut site overhang:75071807 rate:4213 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:84000000 Reads with barcode and cut site overhang:75992591 rate:4210 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:85000000 Reads with barcode and cut site overhang:76913918 rate:4208 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:86000000 Reads with barcode and cut site overhang:77830313 rate:4205 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:87000000 Reads with barcode and cut site overhang:78751614 rate:4200 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:88000000 Reads with barcode and cut site overhang:79670714 rate:4198 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:89000000 Reads with barcode and cut site overhang:80572717 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:90000000 Reads with barcode and cut site overhang:81465839 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:91000000 Reads with barcode and cut site overhang:82359542 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:92000000 Reads with barcode and cut site overhang:83249071 rate:4188 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:93000000 Reads with barcode and cut site overhang:84141455 rate:4184 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:94000000 Reads with barcode and cut site overhang:85033784 rate:4183 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:95000000 Reads with barcode and cut site overhang:85933907 rate:4179 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:96000000 Reads with barcode and cut site overhang:86851615 rate:4176 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:97000000 Reads with barcode and cut site overhang:87767302 rate:4174 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:98000000 Reads with barcode and cut site overhang:88666253 rate:4172 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:99000000 Reads with barcode and cut site overhang:89556269 rate:4169 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:100000000 Reads with barcode and cut site overhang:90445188 rate:4169 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:101000000 Reads with barcode and cut site overhang:91345236 rate:4166 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:102000000 Reads with barcode and cut site overhang:92260684 rate:4165 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:103000000 Reads with barcode and cut site overhang:93176239 rate:4163 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:104000000 Reads with barcode and cut site overhang:94087438 rate:4160 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:105000000 Reads with barcode and cut site overhang:95002027 rate:4159 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:106000000 Reads with barcode and cut site overhang:95916504 rate:4157 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:107000000 Reads with barcode and cut site overhang:96813304 rate:4157 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:108000000 Reads with barcode and cut site overhang:97703028 rate:4155 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:109000000 Reads with barcode and cut site overhang:98591278 rate:4154 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:110000000 Reads with barcode and cut site overhang:99475692 rate:4179 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:111000000 Reads with barcode and cut site overhang:100361267 rate:4177 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:112000000 Reads with barcode and cut site overhang:101246879 rate:4174 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:113000000 Reads with barcode and cut site overhang:102138266 rate:4172 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:114000000 Reads with barcode and cut site overhang:103047885 rate:4170 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:115000000 Reads with barcode and cut site overhang:103959526 rate:4167 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:116000000 Reads with barcode and cut site overhang:104867467 rate:4163 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:117000000 Reads with barcode and cut site overhang:105778328 rate:4161 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:119000000 Reads with barcode and cut site overhang:107574648 rate:4157 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:120000000 Reads with barcode and cut site overhang:108455762 rate:4157 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:121000000 Reads with barcode and cut site overhang:109336389 rate:4156 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:122000000 Reads with barcode and cut site overhang:110230994 rate:4154 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:123000000 Reads with barcode and cut site overhang:111141360 rate:4153 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:124000000 Reads with barcode and cut site overhang:112051867 rate:4151 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:125000000 Reads with barcode and cut site overhang:112933597 rate:4150 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:126000000 Reads with barcode and cut site overhang:113807757 rate:4149 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:127000000 Reads with barcode and cut site overhang:114682137 rate:4151 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:128000000 Reads with barcode and cut site overhang:115551223 rate:4149 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:129000000 Reads with barcode and cut site overhang:116419440 rate:4149 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:130000000 Reads with barcode and cut site overhang:117285188 rate:4146 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:131000000 Reads with barcode and cut site overhang:118160728 rate:4146 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:132000000 Reads with barcode and cut site overhang:119067073 rate:4145 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:133000000 Reads with barcode and cut site overhang:119973203 rate:4145 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:135000000 Reads with barcode and cut site overhang:121783490 rate:4142 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:137000000 Reads with barcode and cut site overhang:123595844 rate:4143 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:138000000 Reads with barcode and cut site overhang:124508815 rate:4174 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:139000000 Reads with barcode and cut site overhang:125421667 rate:4173 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:140000000 Reads with barcode and cut site overhang:126330204 rate:4171 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:142000000 Reads with barcode and cut site overhang:128157247 rate:4168 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:143000000 Reads with barcode and cut site overhang:129062136 rate:4168 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:144000000 Reads with barcode and cut site overhang:129965032 rate:4166 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:145000000 Reads with barcode and cut site overhang:130866601 rate:4164 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:146000000 Reads with barcode and cut site overhang:131771326 rate:4163 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:148000000 Reads with barcode and cut site overhang:133598648 rate:4161 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:150000000 Reads with barcode and cut site overhang:135400193 rate:4161 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:151000000 Reads with barcode and cut site overhang:136299004 rate:4161 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:152000000 Reads with barcode and cut site overhang:137193308 rate:4159 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:153000000 Reads with barcode and cut site overhang:138089998 rate:4158 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:154000000 Reads with barcode and cut site overhang:138983945 rate:4156 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:157000000 Reads with barcode and cut site overhang:141702994 rate:4153 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:158000000 Reads with barcode and cut site overhang:142606591 rate:4151 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:159000000 Reads with barcode and cut site overhang:143517410 rate:4151 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:160000000 Reads with barcode and cut site overhang:144426210 rate:4151 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:161000000 Reads with barcode and cut site overhang:145327098 rate:4150 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:162000000 Reads with barcode and cut site overhang:146250489 rate:4150 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:163000000 Reads with barcode and cut site overhang:147173153 rate:4150 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:164000000 Reads with barcode and cut site overhang:148090785 rate:4149 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:165000000 Reads with barcode and cut site overhang:149014139 rate:4147 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:166000000 Reads with barcode and cut site overhang:149938171 rate:4147 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:167000000 Reads with barcode and cut site overhang:150854240 rate:4146 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:168000000 Reads with barcode and cut site overhang:151760097 rate:4177 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:169000000 Reads with barcode and cut site overhang:152665120 rate:4177 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:170000000 Reads with barcode and cut site overhang:153568605 rate:4176 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:171000000 Reads with barcode and cut site overhang:154482066 rate:4176 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:172000000 Reads with barcode and cut site overhang:155404120 rate:4176 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:173000000 Reads with barcode and cut site overhang:156326324 rate:4177 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:174000000 Reads with barcode and cut site overhang:157227484 rate:4177 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:175000000 Reads with barcode and cut site overhang:158130608 rate:4178 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:176000000 Reads with barcode and cut site overhang:159030822 rate:4177 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:177000000 Reads with barcode and cut site overhang:159928436 rate:4178 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:179000000 Reads with barcode and cut site overhang:161731109 rate:4176 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:181000000 Reads with barcode and cut site overhang:163551579 rate:4175 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:182000000 Reads with barcode and cut site overhang:164472775 rate:4174 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:186000000 Reads with barcode and cut site overhang:168120535 rate:4171 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:187000000 Reads with barcode and cut site overhang:169042116 rate:4171 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:188000000 Reads with barcode and cut site overhang:169961663 rate:4172 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:189000000 Reads with barcode and cut site overhang:170874974 rate:4172 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:191000000 Reads with barcode and cut site overhang:172702151 rate:4170 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:192000000 Reads with barcode and cut site overhang:173616924 rate:4172 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:193000000 Reads with barcode and cut site overhang:174529783 rate:4171 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:194000000 Reads with barcode and cut site overhang:175448342 rate:4170 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:195000000 Reads with barcode and cut site overhang:176366785 rate:4170 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:196000000 Reads with barcode and cut site overhang:177275658 rate:4171 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:197000000 Reads with barcode and cut site overhang:178188054 rate:4171 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:198000000 Reads with barcode and cut site overhang:179100871 rate:4171 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:199000000 Reads with barcode and cut site overhang:180011799 rate:4172 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:200000000 Reads with barcode and cut site overhang:180929513 rate:4172 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:201000000 Reads with barcode and cut site overhang:181846647 rate:4172 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:202000000 Reads with barcode and cut site overhang:182758160 rate:4173 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:204000000 Reads with barcode and cut site overhang:184590709 rate:4195 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:205000000 Reads with barcode and cut site overhang:185499207 rate:4196 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:206000000 Reads with barcode and cut site overhang:186409586 rate:4195 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:207000000 Reads with barcode and cut site overhang:187320010 rate:4195 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:208000000 Reads with barcode and cut site overhang:188224996 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:209000000 Reads with barcode and cut site overhang:189134307 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:210000000 Reads with barcode and cut site overhang:190043069 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:211000000 Reads with barcode and cut site overhang:190949073 rate:4195 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:212000000 Reads with barcode and cut site overhang:191873262 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:213000000 Reads with barcode and cut site overhang:192797098 rate:4193 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:214000000 Reads with barcode and cut site overhang:193715741 rate:4193 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:215000000 Reads with barcode and cut site overhang:194639785 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:217000000 Reads with barcode and cut site overhang:196478069 rate:4191 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:218000000 Reads with barcode and cut site overhang:197385708 rate:4191 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:219000000 Reads with barcode and cut site overhang:198292136 rate:4191 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:220000000 Reads with barcode and cut site overhang:199192906 rate:4191 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:221000000 Reads with barcode and cut site overhang:200114617 rate:4191 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:222000000 Reads with barcode and cut site overhang:201035308 rate:4191 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:223000000 Reads with barcode and cut site overhang:201951482 rate:4191 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:225000000 Reads with barcode and cut site overhang:203758138 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:226000000 Reads with barcode and cut site overhang:204659009 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:227000000 Reads with barcode and cut site overhang:205556688 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:228000000 Reads with barcode and cut site overhang:206456771 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:229000000 Reads with barcode and cut site overhang:207356466 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:230000000 Reads with barcode and cut site overhang:208259277 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:231000000 Reads with barcode and cut site overhang:209180238 rate:4191 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:232000000 Reads with barcode and cut site overhang:210101526 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:233000000 Reads with barcode and cut site overhang:211011020 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:234000000 Reads with barcode and cut site overhang:211916716 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:235000000 Reads with barcode and cut site overhang:212822090 rate:4192 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:236000000 Reads with barcode and cut site overhang:213726848 rate:4193 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:238000000 Reads with barcode and cut site overhang:215567193 rate:4193 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:239000000 Reads with barcode and cut site overhang:216478868 rate:4193 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:240000000 Reads with barcode and cut site overhang:217385177 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:241000000 Reads with barcode and cut site overhang:218291284 rate:4195 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:242000000 Reads with barcode and cut site overhang:219196440 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:243000000 Reads with barcode and cut site overhang:220114840 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:244000000 Reads with barcode and cut site overhang:221032714 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:245000000 Reads with barcode and cut site overhang:221943590 rate:4194 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:246000000 Reads with barcode and cut site overhang:222847409 rate:4195 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:247000000 Reads with barcode and cut site overhang:223751772 rate:4195 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:248000000 Reads with barcode and cut site overhang:224652128 rate:4221 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:249000000 Reads with barcode and cut site overhang:225571146 rate:4220 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:250000000 Reads with barcode and cut site overhang:226488760 rate:4220 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:251000000 Reads with barcode and cut site overhang:227401997 rate:4219 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:252000000 Reads with barcode and cut site overhang:228319101 rate:4217 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:253000000 Reads with barcode and cut site overhang:229234590 rate:4217 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:254000000 Reads with barcode and cut site overhang:230151049 rate:4217 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:255000000 Reads with barcode and cut site overhang:231049040 rate:4217 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:256000000 Reads with barcode and cut site overhang:231951231 rate:4217 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:257000000 Reads with barcode and cut site overhang:232853065 rate:4217 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:258000000 Reads with barcode and cut site overhang:233769429 rate:4216 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:259000000 Reads with barcode and cut site overhang:234693161 rate:4215 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:261000000 Reads with barcode and cut site overhang:236402670 rate:4213 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:262000000 Reads with barcode and cut site overhang:237303097 rate:4214 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:263000000 Reads with barcode and cut site overhang:238203607 rate:4213 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:264000000 Reads with barcode and cut site overhang:239118184 rate:4213 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:265000000 Reads with barcode and cut site overhang:240042923 rate:4212 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:266000000 Reads with barcode and cut site overhang:240967037 rate:4212 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:267000000 Reads with barcode and cut site overhang:241864940 rate:4211 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:268000000 Reads with barcode and cut site overhang:242764088 rate:4211 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:269000000 Reads with barcode and cut site overhang:243661667 rate:4210 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:270000000 Reads with barcode and cut site overhang:244570492 rate:4211 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:271000000 Reads with barcode and cut site overhang:245491934 rate:4211 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:272000000 Reads with barcode and cut site overhang:246412095 rate:4211 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:273000000 Reads with barcode and cut site overhang:247309949 rate:4211 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:274000000 Reads with barcode and cut site overhang:248206062 rate:4211 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:275000000 Reads with barcode and cut site overhang:249102589 rate:4211 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:276000000 Reads with barcode and cut site overhang:249994035 rate:4212 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:277000000 Reads with barcode and cut site overhang:250888625 rate:4212 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:279000000 Reads with barcode and cut site overhang:252673064 rate:4214 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:280000000 Reads with barcode and cut site overhang:253591546 rate:4215 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:281000000 Reads with barcode and cut site overhang:254510259 rate:4217 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:282000000 Reads with barcode and cut site overhang:255424910 rate:4218 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:283000000 Reads with barcode and cut site overhang:256343618 rate:4220 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:284000000 Reads with barcode and cut site overhang:257260849 rate:4235 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:285000000 Reads with barcode and cut site overhang:258172443 rate:4235 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:286000000 Reads with barcode and cut site overhang:259088220 rate:4234 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:287000000 Reads with barcode and cut site overhang:260002573 rate:4233 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:288000000 Reads with barcode and cut site overhang:260912734 rate:4233 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:289000000 Reads with barcode and cut site overhang:261825545 rate:4232 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:290000000 Reads with barcode and cut site overhang:262737496 rate:4232 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:292000000 Reads with barcode and cut site overhang:264558217 rate:4232 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total Reads:293000000 Reads with barcode and cut site overhang:265468894 rate:4232 ns/read
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total number of reads in lane=293564717
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total number of good barcoded reads=265979394
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Total number of low quality reads=0
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Timing process (sorting, collapsing, and writing TagCount to file).
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - Process took 1242508.701153 milliseconds for file /project/cranberrygbs/cranberryHistoricalGBS/testing/input/fastq_files/C8BNLANXX_1_fastq.gz
+
+Finished processing batch 1
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - 
+Writing ReadsPerSample log file...
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - ReadsPerSample log file: /lustre/project/cranberrygbs/cranberryHistoricalGBS/testing/snps/C8BNLANXX_1file_ReadsPerSample.log
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 - 
+
+Total number of SNPs processed with minimum quality score 0 was 22493.
+
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2 -    ...done
+
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2: time: Mar 11, 2021 12:46:8
+[pool-1-thread-1] INFO net.maizegenetics.pipeline.TasselPipeline - net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2: time: Mar 11, 2021 12:46:8: progress: 100%
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - net.maizegenetics.analysis.gbs.v2.ProductionSNPCallerPluginV2  Citation: Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) TASSEL: Software for association mapping of complex traits in diverse samples. Bioinformatics 23:2633-2635.
