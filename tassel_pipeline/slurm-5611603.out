@@ -1,0 +1,427 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+/software/7/apps/tassel5/5.2.37/lib/commons-codec-1.10.jar:/software/7/apps/tassel5/5.2.37/lib/javax.json-1.0.4.jar:/software/7/apps/tassel5/5.2.37/lib/xml.jar:/software/7/apps/tassel5/5.2.37/lib/batik-awt-util.jar:/software/7/apps/tassel5/5.2.37/lib/json-simple-1.1.1.jar:/software/7/apps/tassel5/5.2.37/lib/colt.jar:/software/7/apps/tassel5/5.2.37/lib/ahocorasick-0.2.4.jar:/software/7/apps/tassel5/5.2.37/lib/batik-ext.jar:/software/7/apps/tassel5/5.2.37/lib/slf4j-api-1.7.10.jar:/software/7/apps/tassel5/5.2.37/lib/geronimo-spec-activation-1.0.2-rc4.jar:/software/7/apps/tassel5/5.2.37/lib/batik-svg-dom.jar:/software/7/apps/tassel5/5.2.37/lib/sqlite-jdbc-3.8.5-pre1.jar:/software/7/apps/tassel5/5.2.37/lib/jcommon-1.0.23.jar:/software/7/apps/tassel5/5.2.37/lib/batik-dom.jar:/software/7/apps/tassel5/5.2.37/lib/ejml-0.23.jar:/software/7/apps/tassel5/5.2.37/lib/cisd-jhdf5-batteries_included_lin_win_mac.jar:/software/7/apps/tassel5/5.2.37/lib/forester.jar:/software/7/apps/tassel5/5.2.37/lib/batik-gvt.jar:/software/7/apps/tassel5/5.2.37/lib/batik-gui-util.jar:/software/7/apps/tassel5/5.2.37/lib/batik-svggen.jar:/software/7/apps/tassel5/5.2.37/lib/htsjdk-1.138.jar:/software/7/apps/tassel5/5.2.37/lib/postgresql-9.4-1201.jdbc41.jar:/software/7/apps/tassel5/5.2.37/lib/snappy-java-1.1.1.6.jar:/software/7/apps/tassel5/5.2.37/lib/mail-1.4.jar:/software/7/apps/tassel5/5.2.37/lib/guava-19.0.jar:/software/7/apps/tassel5/5.2.37/lib/xercesImpl.jar:/software/7/apps/tassel5/5.2.37/lib/xmlParserAPIs.jar:/software/7/apps/tassel5/5.2.37/lib/batik-parser.jar:/software/7/apps/tassel5/5.2.37/lib/trove-3.0.3.jar:/software/7/apps/tassel5/5.2.37/lib/batik-xml.jar:/software/7/apps/tassel5/5.2.37/lib/batik-css.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-alignment-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-core-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/commons-math3-3.4.1.jar:/software/7/apps/tassel5/5.2.37/lib/poi-3.0.1-FINAL-20070705.jar:/software/7/apps/tassel5/5.2.37/lib/itextpdf-5.1.0.jar:/software/7/apps/tassel5/5.2.37/lib/batik-util.jar:/software/7/apps/tassel5/5.2.37/lib/log4j-1.2.13.jar:/software/7/apps/tassel5/5.2.37/lib/slf4j-simple-1.7.10.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-phylo-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/jfreechart-1.0.19.jar:/software/7/apps/tassel5/5.2.37/lib/junit-4.10.jar:/software/7/apps/tassel5/5.2.37/sTASSEL.jar
+Memory Settings: -Xms1G -Xmx48G
+Tassel Pipeline Arguments: -fork1 -GBSSeqToTagDBPlugin -c 10 -db /project/cranberrygbs/cranberryHistoricalGBS//database/cranberry_gbs_discovery.db -i /project/cranberrygbs/cranberryHistoricalGBS//input -k /project/cranberrygbs/cranberryHistoricalGBS//input/cranberry_gbs_all_keys.txt -e EcoT22I -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
+[main] INFO net.maizegenetics.tassel.TasselLogging - Tassel Version: 5.2.37  Date: April 6, 2017
+[main] INFO net.maizegenetics.tassel.TasselLogging - Max Available Memory Reported by JVM: 43691 MB
+[main] INFO net.maizegenetics.tassel.TasselLogging - Java Version: 1.8.0_121
+[main] INFO net.maizegenetics.tassel.TasselLogging - OS: Linux
+[main] INFO net.maizegenetics.tassel.TasselLogging - Number of Processors: 72
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Pipeline Arguments: [-fork1, -GBSSeqToTagDBPlugin, -c, 10, -db, /project/cranberrygbs/cranberryHistoricalGBS//database/cranberry_gbs_discovery.db, -i, /project/cranberrygbs/cranberryHistoricalGBS//input, -k, /project/cranberrygbs/cranberryHistoricalGBS//input/cranberry_gbs_all_keys.txt, -e, EcoT22I, -kmerLength, 64, -minKmerL, 20, -mnQS, 20, -mxKmerNum, 100000000, -endPlugin, -runfork1]
+net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin: time: Mar 11, 2021 13:16:31
+Enzyme: EcoT22I
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - 
+GBSSeqToTagDBPlugin Parameters
+i: /project/cranberrygbs/cranberryHistoricalGBS//input
+k: /project/cranberrygbs/cranberryHistoricalGBS//input/cranberry_gbs_all_keys.txt
+e: EcoT22I
+kmerLength: 64
+minKmerL: 20
+c: 10
+db: /project/cranberrygbs/cranberryHistoricalGBS//database/cranberry_gbs_discovery.db
+mnQS: 20
+mxKmerNum: 100000000
+batchSize: 8
+deleteOldData: true
+
+Found 13 files to process
+size of all tags in tag table=0
+size of all tissues in tissue table=0
+size of all tags in mappingApproach table=0
+size of all taxa in taxa table=0
+
+Start processing batch 1
+Enzyme: EcoT22I
+Enzyme: EcoT22I
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C574FACXX_2_fastq.gz
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_3_fastq.gz
+Enzyme: EcoT22I
+Enzyme: EcoT22I
+Enzyme: EcoT22I
+Enzyme: EcoT22I
+Enzyme: EcoT22I
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_5_fastq.gz
+Enzyme: EcoT22I
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_4_fastq.gz
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_7_fastq.gz
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_6_fastq.gz
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_2_fastq.gz
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C511KACXX_2_fastq.gz
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_4_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_2_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_3_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C574FACXX_2_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_5_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C511KACXX_2_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_7_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_6_fastq.gz: Quality score base:33
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:10000000 Reads with barcode and cut site overhang:5013182 rate:8590 ns/read. Current tag count:1224600
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:10000000 Reads with barcode and cut site overhang:6638561 rate:8840 ns/read. Current tag count:1247282
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:10000000 Reads with barcode and cut site overhang:4459812 rate:9008 ns/read. Current tag count:1279208
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:20000000 Reads with barcode and cut site overhang:8729197 rate:8142 ns/read. Current tag count:1887267
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:20000000 Reads with barcode and cut site overhang:11473575 rate:8270 ns/read. Current tag count:1913783
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:20000000 Reads with barcode and cut site overhang:12212340 rate:9162 ns/read. Current tag count:2078007
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:30000000 Reads with barcode and cut site overhang:18956582 rate:8763 ns/read. Current tag count:2630490
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:30000000 Reads with barcode and cut site overhang:17577919 rate:9216 ns/read. Current tag count:2702829
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:40000000 Reads with barcode and cut site overhang:19101025 rate:7914 ns/read. Current tag count:2929983
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:50000000 Reads with barcode and cut site overhang:24068635 rate:7787 ns/read. Current tag count:3290464
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:50000000 Reads with barcode and cut site overhang:24612897 rate:8210 ns/read. Current tag count:3387722
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:60000000 Reads with barcode and cut site overhang:17375236 rate:7224 ns/read. Current tag count:3510742
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:50000000 Reads with barcode and cut site overhang:22418396 rate:9048 ns/read. Current tag count:3604615
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:50000000 Reads with barcode and cut site overhang:26598167 rate:9107 ns/read. Current tag count:3625692
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:60000000 Reads with barcode and cut site overhang:30114238 rate:8166 ns/read. Current tag count:3789188
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:60000000 Reads with barcode and cut site overhang:28092453 rate:9021 ns/read. Current tag count:4099770
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:60000000 Reads with barcode and cut site overhang:32890228 rate:9145 ns/read. Current tag count:4158503
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:70000000 Reads with barcode and cut site overhang:35799437 rate:8127 ns/read. Current tag count:4243089
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:70000000 Reads with barcode and cut site overhang:41012777 rate:8703 ns/read. Current tag count:4351974
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:70000000 Reads with barcode and cut site overhang:33108879 rate:9296 ns/read. Current tag count:4494804
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:80000000 Reads with barcode and cut site overhang:41306427 rate:8433 ns/read. Current tag count:4603226
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:100000000 Reads with barcode and cut site overhang:26000144 rate:7192 ns/read. Current tag count:4770842
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:24030718 rate:6552 ns/read. Current tag count:4779504
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:80000000 Reads with barcode and cut site overhang:37323197 rate:9218 ns/read. Current tag count:4842650
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:90000000 Reads with barcode and cut site overhang:46883833 rate:8540 ns/read. Current tag count:4874575
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:80000000 Reads with barcode and cut site overhang:44153840 rate:9646 ns/read. Current tag count:4887881
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:90000000 Reads with barcode and cut site overhang:46257786 rate:8596 ns/read. Current tag count:4897199
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:90000000 Reads with barcode and cut site overhang:49043580 rate:8747 ns/read. Current tag count:4953749
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:100000000 Reads with barcode and cut site overhang:52397065 rate:8411 ns/read. Current tag count:5135908
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:100000000 Reads with barcode and cut site overhang:51440193 rate:8479 ns/read. Current tag count:5151652
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:100000000 Reads with barcode and cut site overhang:55797701 rate:8672 ns/read. Current tag count:5232365
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:52137653 rate:8051 ns/read. Current tag count:5298547
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:56952341 rate:8500 ns/read. Current tag count:5405127
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:58412155 rate:8521 ns/read. Current tag count:5418560
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:29539358 rate:6373 ns/read. Current tag count:5477991
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:62790902 rate:8735 ns/read. Current tag count:5500748
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:120000000 Reads with barcode and cut site overhang:57907773 rate:8107 ns/read. Current tag count:5554375
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:120000000 Reads with barcode and cut site overhang:62325004 rate:8389 ns/read. Current tag count:5665534
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:120000000 Reads with barcode and cut site overhang:64715514 rate:8436 ns/read. Current tag count:5678851
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:61303484 rate:9367 ns/read. Current tag count:5758490
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:130000000 Reads with barcode and cut site overhang:63444833 rate:8066 ns/read. Current tag count:5811088
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:35909577 rate:7027 ns/read. Current tag count:5830941
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:120000000 Reads with barcode and cut site overhang:52728433 rate:8853 ns/read. Current tag count:5852709
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:130000000 Reads with barcode and cut site overhang:70955438 rate:8373 ns/read. Current tag count:5886815
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:170000000 Reads with barcode and cut site overhang:38426705 rate:6436 ns/read. Current tag count:5902853
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:140000000 Reads with barcode and cut site overhang:68403205 rate:8099 ns/read. Current tag count:6051025
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:120000000 Reads with barcode and cut site overhang:67054182 rate:9464 ns/read. Current tag count:6054933
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:160000000 Reads with barcode and cut site overhang:40784218 rate:7159 ns/read. Current tag count:6088504
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:140000000 Reads with barcode and cut site overhang:77310040 rate:8226 ns/read. Current tag count:6109475
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:140000000 Reads with barcode and cut site overhang:77163889 rate:8434 ns/read. Current tag count:6209679
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:200000000 Reads with barcode and cut site overhang:41619089 rate:5958 ns/read. Current tag count:6255749
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:83222866 rate:7995 ns/read. Current tag count:6285563
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:73394809 rate:7998 ns/read. Current tag count:6287364
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:140000000 Reads with barcode and cut site overhang:58960006 rate:8634 ns/read. Current tag count:6318358
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:83913788 rate:8355 ns/read. Current tag count:6425429
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:46048913 rate:6031 ns/read. Current tag count:6470387
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:160000000 Reads with barcode and cut site overhang:82019672 rate:8222 ns/read. Current tag count:6630934
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:160000000 Reads with barcode and cut site overhang:90530973 rate:8246 ns/read. Current tag count:6640059
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:170000000 Reads with barcode and cut site overhang:82903800 rate:7819 ns/read. Current tag count:6679383
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:82984026 rate:8966 ns/read. Current tag count:6741062
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:200000000 Reads with barcode and cut site overhang:48615078 rate:6759 ns/read. Current tag count:6763021
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:180000000 Reads with barcode and cut site overhang:101274195 rate:7838 ns/read. Current tag count:6912468
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:180000000 Reads with barcode and cut site overhang:89081995 rate:7850 ns/read. Current tag count:6916619
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:51688126 rate:5720 ns/read. Current tag count:6970972
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:160000000 Reads with barcode and cut site overhang:88782998 rate:8958 ns/read. Current tag count:6980718
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:170000000 Reads with barcode and cut site overhang:74690396 rate:8468 ns/read. Current tag count:7005721
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:180000000 Reads with barcode and cut site overhang:93159382 rate:8111 ns/read. Current tag count:7078271
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:180000000 Reads with barcode and cut site overhang:96672633 rate:8790 ns/read. Current tag count:7399794
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:117473559 rate:7595 ns/read. Current tag count:7435790
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:200000000 Reads with barcode and cut site overhang:103669352 rate:8026 ns/read. Current tag count:7460190
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:106656095 rate:7747 ns/read. Current tag count:7512955
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:61598958 rate:6584 ns/read. Current tag count:7573491
+[ForkJoinPool.commonPool-worker-29] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_6_fastq.gz
+Total number of reads in lane=298516524
+Total number of good barcoded reads=60600898
+Total number of low quality reads=86908154
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 1651511.367524 milliseconds.
+tagCntMap size: 7587424
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:109493256 rate:7946 ns/read. Current tag count:7643815
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:230000000 Reads with barcode and cut site overhang:128880827 rate:7514 ns/read. Current tag count:7773291
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:91073740 rate:8259 ns/read. Current tag count:7792656
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:200000000 Reads with barcode and cut site overhang:109582240 rate:8680 ns/read. Current tag count:7798424
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:220000000 Reads with barcode and cut site overhang:115246763 rate:7912 ns/read. Current tag count:7811457
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:230000000 Reads with barcode and cut site overhang:119508730 rate:7618 ns/read. Current tag count:7842388
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:240000000 Reads with barcode and cut site overhang:134529768 rate:7420 ns/read. Current tag count:7915855
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:230000000 Reads with barcode and cut site overhang:121813045 rate:7774 ns/read. Current tag count:7946321
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:115488949 rate:8564 ns/read. Current tag count:7983636
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:230000000 Reads with barcode and cut site overhang:121008132 rate:7855 ns/read. Current tag count:8005030
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:139343356 rate:7298 ns/read. Current tag count:8049059
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:230000000 Reads with barcode and cut site overhang:99301315 rate:8064 ns/read. Current tag count:8129227
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:220000000 Reads with barcode and cut site overhang:120180613 rate:8463 ns/read. Current tag count:8144285
+[ForkJoinPool.commonPool-worker-57] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_7_fastq.gz
+Total number of reads in lane=295267589
+Total number of good barcoded reads=71026203
+Total number of low quality reads=89305753
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 1887114.284554 milliseconds.
+tagCntMap size: 8191978
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:260000000 Reads with barcode and cut site overhang:137825506 rate:7360 ns/read. Current tag count:8260482
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:135374633 rate:7752 ns/read. Current tag count:8270691
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:230000000 Reads with barcode and cut site overhang:125029492 rate:8460 ns/read. Current tag count:8286379
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:270000000 Reads with barcode and cut site overhang:149610031 rate:7213 ns/read. Current tag count:8292522
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:132254516 rate:7817 ns/read. Current tag count:8307291
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:105763447 rate:7906 ns/read. Current tag count:8364787
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:270000000 Reads with barcode and cut site overhang:144202826 rate:7348 ns/read. Current tag count:8384614
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:280000000 Reads with barcode and cut site overhang:154917963 rate:7139 ns/read. Current tag count:8417844
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:240000000 Reads with barcode and cut site overhang:131645036 rate:8365 ns/read. Current tag count:8436611
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:260000000 Reads with barcode and cut site overhang:111508884 rate:7864 ns/read. Current tag count:8531920
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:270000000 Reads with barcode and cut site overhang:144989805 rate:7604 ns/read. Current tag count:8560044
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:137788207 rate:8256 ns/read. Current tag count:8590544
+[ForkJoinPool.commonPool-worker-43] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C574FACXX_2_fastq.gz
+Total number of reads in lane=272626313
+Total number of good barcoded reads=145664229
+Total number of low quality reads=76529264
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 2065370.043473 milliseconds.
+tagCntMap size: 8594539
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:270000000 Reads with barcode and cut site overhang:143532337 rate:7676 ns/read. Current tag count:8608458
+[ForkJoinPool.commonPool-worker-15] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_2_fastq.gz
+Total number of reads in lane=297741593
+Total number of good barcoded reads=161309966
+Total number of low quality reads=108207857
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 2079254.370322 milliseconds.
+tagCntMap size: 8623635
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:290000000 Reads with barcode and cut site overhang:155702040 rate:7199 ns/read. Current tag count:8640621
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:270000000 Reads with barcode and cut site overhang:116157987 rate:7759 ns/read. Current tag count:8653936
+[ForkJoinPool.commonPool-worker-86] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_3_fastq.gz
+Total number of reads in lane=292793875
+Total number of good barcoded reads=157044124
+Total number of low quality reads=110257214
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 2099385.761067 milliseconds.
+tagCntMap size: 8662188
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:260000000 Reads with barcode and cut site overhang:143137351 rate:8120 ns/read. Current tag count:8680122
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:280000000 Reads with barcode and cut site overhang:149017573 rate:7550 ns/read. Current tag count:8687189
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:280000000 Reads with barcode and cut site overhang:119585304 rate:7622 ns/read. Current tag count:8717423
+[ForkJoinPool.commonPool-worker-100] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C511KACXX_2_fastq.gz
+Total number of reads in lane=269645508
+Total number of good barcoded reads=146872403
+Total number of low quality reads=91484630
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 2148531.494784 milliseconds.
+tagCntMap size: 8734096
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:290000000 Reads with barcode and cut site overhang:154962195 rate:7433 ns/read. Current tag count:8737201
+[ForkJoinPool.commonPool-worker-114] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_5_fastq.gz
+Total number of reads in lane=288333754
+Total number of good barcoded reads=119911043
+Total number of low quality reads=106992318
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 2158380.852138 milliseconds.
+tagCntMap size: 8739083
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_4_fastq.gz
+Total number of reads in lane=324305773
+Total number of good barcoded reads=173216159
+Total number of low quality reads=121629522
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 2296291.990492 milliseconds.
+tagCntMap size: 8821280
+
+Kmers are added from batch 1. Total batch number: 2
+Current number: 8821280. Max kmer number: 100000000
+0.0882128 of max tag number
+Map Tags:8,821,280  Memory:3,377,938,996  TotalDepth:1,035,645,025  AvgDepthPerTag:117
+
+Starting removeTagsWithoutReplication. Current tag number: 8821280
+Finished removeTagsWithoutReplication.  tagsRemoved = 8520830. Current tag number: 300450
+Map Tags:300,450  Memory:2,481,309,574  TotalDepth:1,005,471,929  AvgDepthPerTag:3346
+
+Kmer number is reduced to 300450
+
+Total memory: 22.0 Gb
+Free memory: 15.0 Gb
+Max memory: 42.0 Gb
+
+
+
+Start processing batch 2
+Enzyme: EcoT22I
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C574FACXX_1_fastq.gz
+Enzyme: EcoT22I
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C511KACXX_3_fastq.gz
+Enzyme: EcoT22I
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C574FACXX_3_fastq.gz
+Enzyme: EcoT22I
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_1_fastq.gz
+Enzyme: EcoT22I
+[ForkJoinPool.commonPool-worker-89] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - processing file /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_8_fastq.gz
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_1_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C574FACXX_1_fastq.gz: Quality score base:33
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C511KACXX_3_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-89] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_8_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSUtils - /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C574FACXX_3_fastq.gz: Quality score base:33
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:10000000 Reads with barcode and cut site overhang:6172626 rate:4934 ns/read. Current tag count:870776
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:10000000 Reads with barcode and cut site overhang:5716447 rate:5925 ns/read. Current tag count:981567
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:10000000 Reads with barcode and cut site overhang:6529608 rate:6209 ns/read. Current tag count:1018637
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:10000000 Reads with barcode and cut site overhang:6152906 rate:6310 ns/read. Current tag count:1033600
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:20000000 Reads with barcode and cut site overhang:12132960 rate:4915 ns/read. Current tag count:1365145
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:20000000 Reads with barcode and cut site overhang:11401263 rate:5723 ns/read. Current tag count:1512917
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:30000000 Reads with barcode and cut site overhang:15029979 rate:4704 ns/read. Current tag count:1704113
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:30000000 Reads with barcode and cut site overhang:18680081 rate:5567 ns/read. Current tag count:1882823
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:50000000 Reads with barcode and cut site overhang:19678560 rate:4259 ns/read. Current tag count:2131825
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:40000000 Reads with barcode and cut site overhang:20664549 rate:5416 ns/read. Current tag count:2158293
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:40000000 Reads with barcode and cut site overhang:21573572 rate:5492 ns/read. Current tag count:2171541
+[ForkJoinPool.commonPool-worker-89] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:60000000 Reads with barcode and cut site overhang:12470932 rate:4233 ns/read. Current tag count:2383633
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:50000000 Reads with barcode and cut site overhang:24503723 rate:5187 ns/read. Current tag count:2429085
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:50000000 Reads with barcode and cut site overhang:25920720 rate:5261 ns/read. Current tag count:2449751
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:60000000 Reads with barcode and cut site overhang:32395724 rate:5284 ns/read. Current tag count:2757319
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:90000000 Reads with barcode and cut site overhang:33550958 rate:4175 ns/read. Current tag count:2951147
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:70000000 Reads with barcode and cut site overhang:36622505 rate:5410 ns/read. Current tag count:2970857
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:70000000 Reads with barcode and cut site overhang:38754666 rate:5426 ns/read. Current tag count:2980347
+[ForkJoinPool.commonPool-worker-89] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:100000000 Reads with barcode and cut site overhang:15673072 rate:3826 ns/read. Current tag count:2995283
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:80000000 Reads with barcode and cut site overhang:41995262 rate:5219 ns/read. Current tag count:3211507
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:100000000 Reads with barcode and cut site overhang:40196979 rate:4202 ns/read. Current tag count:3222159
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:80000000 Reads with barcode and cut site overhang:44441287 rate:5264 ns/read. Current tag count:3228550
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:90000000 Reads with barcode and cut site overhang:47335702 rate:5129 ns/read. Current tag count:3412943
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:46780949 rate:4271 ns/read. Current tag count:3451619
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:100000000 Reads with barcode and cut site overhang:50573372 rate:4956 ns/read. Current tag count:3552059
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:120000000 Reads with barcode and cut site overhang:50333158 rate:4264 ns/read. Current tag count:3613854
+[ForkJoinPool.commonPool-worker-89] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:23397778 rate:3630 ns/read. Current tag count:3742882
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:130000000 Reads with barcode and cut site overhang:51590715 rate:4203 ns/read. Current tag count:3753743
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:57019770 rate:5009 ns/read. Current tag count:3771328
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:110000000 Reads with barcode and cut site overhang:56746772 rate:5087 ns/read. Current tag count:3805413
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:140000000 Reads with barcode and cut site overhang:54802784 rate:4184 ns/read. Current tag count:3917795
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:120000000 Reads with barcode and cut site overhang:63695216 rate:5106 ns/read. Current tag count:3955914
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:120000000 Reads with barcode and cut site overhang:61509568 rate:5108 ns/read. Current tag count:3957016
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:61077521 rate:4356 ns/read. Current tag count:4110537
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:130000000 Reads with barcode and cut site overhang:66721319 rate:5222 ns/read. Current tag count:4193544
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:170000000 Reads with barcode and cut site overhang:68903882 rate:4362 ns/read. Current tag count:4420141
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:75571040 rate:5004 ns/read. Current tag count:4447325
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:150000000 Reads with barcode and cut site overhang:75567719 rate:5180 ns/read. Current tag count:4561434
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:160000000 Reads with barcode and cut site overhang:82998011 rate:4934 ns/read. Current tag count:4633704
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:160000000 Reads with barcode and cut site overhang:80690371 rate:4957 ns/read. Current tag count:4653357
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:190000000 Reads with barcode and cut site overhang:74912810 rate:4306 ns/read. Current tag count:4774774
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:170000000 Reads with barcode and cut site overhang:86943051 rate:4920 ns/read. Current tag count:4851916
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:170000000 Reads with barcode and cut site overhang:86270103 rate:5203 ns/read. Current tag count:4984934
+[ForkJoinPool.commonPool-worker-89] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:42956011 rate:3696 ns/read. Current tag count:5118408
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:200000000 Reads with barcode and cut site overhang:105259862 rate:4930 ns/read. Current tag count:5305465
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:200000000 Reads with barcode and cut site overhang:101652164 rate:4980 ns/read. Current tag count:5339341
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:111446969 rate:4912 ns/read. Current tag count:5470543
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:108181837 rate:4960 ns/read. Current tag count:5503584
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:240000000 Reads with barcode and cut site overhang:97200289 rate:4376 ns/read. Current tag count:5525869
+[ForkJoinPool.commonPool-worker-89] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C50VDACXX_8_fastq.gz
+Total number of reads in lane=294163263
+Total number of good barcoded reads=49978361
+Total number of low quality reads=84173487
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 1073070.55481 milliseconds.
+tagCntMap size: 5579569
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:220000000 Reads with barcode and cut site overhang:117804277 rate:4935 ns/read. Current tag count:5612773
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:220000000 Reads with barcode and cut site overhang:114252959 rate:4987 ns/read. Current tag count:5639613
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:210000000 Reads with barcode and cut site overhang:106059334 rate:5229 ns/read. Current tag count:5642665
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:102954702 rate:4403 ns/read. Current tag count:5650551
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:230000000 Reads with barcode and cut site overhang:123654918 rate:4953 ns/read. Current tag count:5736523
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:220000000 Reads with barcode and cut site overhang:111279882 rate:5205 ns/read. Current tag count:5745622
+[ForkJoinPool.commonPool-worker-3] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C574FACXX_1_fastq.gz
+Total number of reads in lane=272756726
+Total number of good barcoded reads=106876927
+Total number of low quality reads=67629926
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 1176869.425456 milliseconds.
+tagCntMap size: 5809031
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:240000000 Reads with barcode and cut site overhang:120500333 rate:4908 ns/read. Current tag count:5812721
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:240000000 Reads with barcode and cut site overhang:129684613 rate:4942 ns/read. Current tag count:5830011
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:127201822 rate:4933 ns/read. Current tag count:5914519
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:250000000 Reads with barcode and cut site overhang:135602967 rate:4957 ns/read. Current tag count:5930049
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:240000000 Reads with barcode and cut site overhang:119690158 rate:5182 ns/read. Current tag count:5938167
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:260000000 Reads with barcode and cut site overhang:133684875 rate:4926 ns/read. Current tag count:6035524
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:270000000 Reads with barcode and cut site overhang:138520346 rate:4891 ns/read. Current tag count:6132461
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:270000000 Reads with barcode and cut site overhang:146794499 rate:4910 ns/read. Current tag count:6142398
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Total Reads:260000000 Reads with barcode and cut site overhang:131338611 rate:5159 ns/read. Current tag count:6169440
+[ForkJoinPool.commonPool-worker-72] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C574FACXX_3_fastq.gz
+Total number of reads in lane=282161894
+Total number of good barcoded reads=139419001
+Total number of low quality reads=74983429
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 1353456.463289 milliseconds.
+tagCntMap size: 6188314
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C511KACXX_3_fastq.gz
+Total number of reads in lane=278757339
+Total number of good barcoded reads=136350166
+Total number of low quality reads=102086957
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 1415466.683233 milliseconds.
+tagCntMap size: 6278010
+[ForkJoinPool.commonPool-worker-64] INFO net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin - Summary for /project/cranberrygbs/cranberryHistoricalGBS/input/fastq_files/C8BNLANXX_1_fastq.gz
+Total number of reads in lane=293564717
+Total number of good barcoded reads=159723306
+Total number of low quality reads=108893679
+Timing process (sorting, collapsing, and writing TagCount to file).
+Process took 1429003.279739 milliseconds.
+tagCntMap size: 6288576
+
+Kmers are added from batch 2. Total batch number: 2
+Current number: 6288576. Max kmer number: 100000000
+0.06288576 of max tag number
+Map Tags:6,288,576  Memory:4,522,592,448  TotalDepth:1,597,819,690  AvgDepthPerTag:254
+
+Starting removeTagsWithoutReplication. Current tag number: 6288576
+Finished removeTagsWithoutReplication.  tagsRemoved = 5947780. Current tag number: 340796
+Map Tags:340,796  Memory:3,908,208,380  TotalDepth:1,581,415,887  AvgDepthPerTag:4640
+
+Kmer number is reduced to 340796
+
+Total memory: 23.0 Gb
+Free memory: 2.0 Gb
+Max memory: 42.0 Gb
+
+
+
+All the batch are processed
+By removing kmers with minCount of 10Kmer number is reduced to 326131
+
+size of all taxa in taxa table=1248
+tagInsertPS.executeBatch() 100001
+tagInsertPS.executeBatch() 100001
+tagInsertPS.executeBatch() 100001
+size of all tags in tag table=326131
+putTaxaDistribution next100001
+putTaxaDistribution next100001
+putTaxaDistribution next100001
+Closing SQLDB
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin: time: Mar 11, 2021 14:19:4
+[pool-1-thread-1] INFO net.maizegenetics.pipeline.TasselPipeline - net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin: time: Mar 11, 2021 14:19:4: progress: 100%
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - net.maizegenetics.analysis.gbs.v2.GBSSeqToTagDBPlugin  Citation: Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) TASSEL: Software for association mapping of complex traits in diverse samples. Bioinformatics 23:2633-2635.
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+/software/7/apps/tassel5/5.2.37/lib/commons-codec-1.10.jar:/software/7/apps/tassel5/5.2.37/lib/javax.json-1.0.4.jar:/software/7/apps/tassel5/5.2.37/lib/xml.jar:/software/7/apps/tassel5/5.2.37/lib/batik-awt-util.jar:/software/7/apps/tassel5/5.2.37/lib/json-simple-1.1.1.jar:/software/7/apps/tassel5/5.2.37/lib/colt.jar:/software/7/apps/tassel5/5.2.37/lib/ahocorasick-0.2.4.jar:/software/7/apps/tassel5/5.2.37/lib/batik-ext.jar:/software/7/apps/tassel5/5.2.37/lib/slf4j-api-1.7.10.jar:/software/7/apps/tassel5/5.2.37/lib/geronimo-spec-activation-1.0.2-rc4.jar:/software/7/apps/tassel5/5.2.37/lib/batik-svg-dom.jar:/software/7/apps/tassel5/5.2.37/lib/sqlite-jdbc-3.8.5-pre1.jar:/software/7/apps/tassel5/5.2.37/lib/jcommon-1.0.23.jar:/software/7/apps/tassel5/5.2.37/lib/batik-dom.jar:/software/7/apps/tassel5/5.2.37/lib/ejml-0.23.jar:/software/7/apps/tassel5/5.2.37/lib/cisd-jhdf5-batteries_included_lin_win_mac.jar:/software/7/apps/tassel5/5.2.37/lib/forester.jar:/software/7/apps/tassel5/5.2.37/lib/batik-gvt.jar:/software/7/apps/tassel5/5.2.37/lib/batik-gui-util.jar:/software/7/apps/tassel5/5.2.37/lib/batik-svggen.jar:/software/7/apps/tassel5/5.2.37/lib/htsjdk-1.138.jar:/software/7/apps/tassel5/5.2.37/lib/postgresql-9.4-1201.jdbc41.jar:/software/7/apps/tassel5/5.2.37/lib/snappy-java-1.1.1.6.jar:/software/7/apps/tassel5/5.2.37/lib/mail-1.4.jar:/software/7/apps/tassel5/5.2.37/lib/guava-19.0.jar:/software/7/apps/tassel5/5.2.37/lib/xercesImpl.jar:/software/7/apps/tassel5/5.2.37/lib/xmlParserAPIs.jar:/software/7/apps/tassel5/5.2.37/lib/batik-parser.jar:/software/7/apps/tassel5/5.2.37/lib/trove-3.0.3.jar:/software/7/apps/tassel5/5.2.37/lib/batik-xml.jar:/software/7/apps/tassel5/5.2.37/lib/batik-css.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-alignment-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-core-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/commons-math3-3.4.1.jar:/software/7/apps/tassel5/5.2.37/lib/poi-3.0.1-FINAL-20070705.jar:/software/7/apps/tassel5/5.2.37/lib/itextpdf-5.1.0.jar:/software/7/apps/tassel5/5.2.37/lib/batik-util.jar:/software/7/apps/tassel5/5.2.37/lib/log4j-1.2.13.jar:/software/7/apps/tassel5/5.2.37/lib/slf4j-simple-1.7.10.jar:/software/7/apps/tassel5/5.2.37/lib/biojava-phylo-4.0.0.jar:/software/7/apps/tassel5/5.2.37/lib/jfreechart-1.0.19.jar:/software/7/apps/tassel5/5.2.37/lib/junit-4.10.jar:/software/7/apps/tassel5/5.2.37/sTASSEL.jar
+Memory Settings: -Xms1G -Xmx48G
+Tassel Pipeline Arguments: -fork1 -TagExportToFastqPlugin -c 1 -db /project/cranberrygbs/cranberryHistoricalGBS//database/cranberry_gbs_discovery.db -o /project/cranberrygbs/cranberryHistoricalGBS//tags/gbs_tags_for_alignment.fa.gz -endPlugin -runfork1
+[main] INFO net.maizegenetics.tassel.TasselLogging - Tassel Version: 5.2.37  Date: April 6, 2017
+[main] INFO net.maizegenetics.tassel.TasselLogging - Max Available Memory Reported by JVM: 43691 MB
+[main] INFO net.maizegenetics.tassel.TasselLogging - Java Version: 1.8.0_121
+[main] INFO net.maizegenetics.tassel.TasselLogging - OS: Linux
+[main] INFO net.maizegenetics.tassel.TasselLogging - Number of Processors: 72
+[main] INFO net.maizegenetics.pipeline.TasselPipeline - Tassel Pipeline Arguments: [-fork1, -TagExportToFastqPlugin, -c, 1, -db, /project/cranberrygbs/cranberryHistoricalGBS//database/cranberry_gbs_discovery.db, -o, /project/cranberrygbs/cranberryHistoricalGBS//tags/gbs_tags_for_alignment.fa.gz, -endPlugin, -runfork1]
+net.maizegenetics.analysis.gbs.v2.TagExportToFastqPlugin
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Starting net.maizegenetics.analysis.gbs.v2.TagExportToFastqPlugin: time: Mar 11, 2021 14:19:6
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - 
+TagExportToFastqPlugin Parameters
+db: /project/cranberrygbs/cranberryHistoricalGBS//database/cranberry_gbs_discovery.db
+o: /project/cranberrygbs/cranberryHistoricalGBS//tags/gbs_tags_for_alignment.fa.gz
+c: 1
+
+size of all tags in tag table=326131
+size of all tissues in tissue table=0
+size of all tags in mappingApproach table=1
+size of all taxa in taxa table=1248
+Closing SQLDB
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.TagExportToFastqPlugin - Finished converting binary tag count file to fastq.
+Total number of tags written: 326131 (above minCount of 1)
+Ouput fastq file: /project/cranberrygbs/cranberryHistoricalGBS//tags/gbs_tags_for_alignment.fa.gz
+
+
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - Finished net.maizegenetics.analysis.gbs.v2.TagExportToFastqPlugin: time: Mar 11, 2021 14:19:13
+[pool-1-thread-1] INFO net.maizegenetics.pipeline.TasselPipeline - net.maizegenetics.analysis.gbs.v2.TagExportToFastqPlugin: time: Mar 11, 2021 14:19:13: progress: 100%
+[pool-1-thread-1] INFO net.maizegenetics.plugindef.AbstractPlugin - net.maizegenetics.analysis.gbs.v2.TagExportToFastqPlugin  Citation: Bradbury PJ, Zhang Z, Kroon DE, Casstevens TM, Ramdoss Y, Buckler ES. (2007) TASSEL: Software for association mapping of complex traits in diverse samples. Bioinformatics 23:2633-2635.
