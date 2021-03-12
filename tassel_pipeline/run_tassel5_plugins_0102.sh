@@ -8,7 +8,7 @@
 #SBATCH --ntasks-per-node=16   # 8 processor core(s) per node X 2 threads per core
 #SBATCH --mem=48G   # maximum memory per node
 #SBATCH --partition=short    # standard node(s)
-#SBATCH --job-name="Tassel5_pipeline_steps1-2"
+#SBATCH --job-name="tassel5_pipeline_set1"
 #SBATCH --mail-user=jeffrey.neyhart@usda.gov   # email address
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
@@ -75,5 +75,9 @@ run_pipeline.pl -Xms1G -Xmx48G -fork1 -TagExportToFastqPlugin \
 
 # Unzip the fasta file
 gunzip $OUTDIR/gbs_tags_for_alignment.fa.gz
+
+
+## This took 63 minutes for 13 flowcell-lanes
+
 
 
