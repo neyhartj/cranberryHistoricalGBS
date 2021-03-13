@@ -31,6 +31,8 @@ set -e
 set -u
 set -o pipefail
 
+# Load tassel
+module load tassel5
 # Load bowtie
 module load bowtie2
 
@@ -45,6 +47,9 @@ SAMOUT=$WD/alignment/gbs_tags_aligned_BenLearv2.sam
 # Basename of reference index
 REFIND=/KEEP/cranberrygbs/genome_assemblies/Vm_BenLear_v2_bowtie_index/Vaccinium_macrocarpon_BenLear_v2
 # REFIND1=/KEEP/cranberrygbs/genome_assemblies/Vm_Stevens_v1_bowtie_index/Vaccinium_macrocarpon_Stevens_v1
+
+# DB name
+DBNAME=$WD/database/cranberry_gbs_discovery.db
 
 # FASTA reference genome
 REF=/KEEP/cranberrygbs/genome_assemblies/Vaccinium_macrocarpon_BenLear_v2.fasta
