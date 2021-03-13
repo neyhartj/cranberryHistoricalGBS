@@ -5,10 +5,10 @@
 
 #SBATCH --time=04:00:00   # walltime limit (HH:MM:SS)
 #SBATCH --nodes=1   # number of nodes
-#SBATCH --ntasks-per-node=2   # 1 processor core(s) per node X 2 threads per core
-#SBATCH --mem=6400M   # maximum memory per node
+#SBATCH --ntasks-per-node=16   # 1 processor core(s) per node X 2 threads per core
+#SBATCH --mem=48G   # maximum memory per node
 #SBATCH --partition=short    # standard node(s)
-#SBATCH --job-name="ProductionSNPCallerPluginV2_testing"
+#SBATCH --job-name="tassel5_production_pipeline"
 #SBATCH --mail-user=jeffrey.neyhart@usda.gov   # email address
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
@@ -33,7 +33,8 @@ module load tassel5
 
 ## Set variables
 # Working directory
-WD=/project/cranberrygbs/cranberryHistoricalGBS/testing/
+WD=/project/cranberrygbs/cranberryHistoricalGBS/
+
 # Name of input directory
 INPUT=$WD/input
 # Name of input directory with FASTQ
@@ -41,10 +42,10 @@ FASTQDIR=$INPUT/fastq_files
 # Name of database
 DBNAME=$WD/database/cranberry_gbs_discovery.db
 # Name of keyfile
-# KEY=$INPUT/cranberry_gbs_all_keys.txt
-KEY=$INPUT/C8BNLANXX_1_keyfile.txt
+KEY=$INPUT/cranberry_gbs_all_keys.txt
+
 # Output file name
-OUTFILE=$WD/snps/cranberryGBS_production_snps_testing.vcf
+OUTFILE=$WD/snps/cranberryGBS_production_snps.vcf
 
 
 # Change working directory
@@ -52,7 +53,7 @@ cd $WD
 
 
 # Execute the plugin
-run_pipeline.pl -Xms1G -Xmx4G -fork1 -ProductionSNPCallerPluginV2 \
+run_pipeline.pl -Xms1G -Xmx48G -fork1 -ProductionSNPCallerPluginV2 \
 -db $DBNAME \
 -e EcoT22I \
 -i $FASTQDIR \
