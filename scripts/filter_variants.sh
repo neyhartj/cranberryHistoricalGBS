@@ -29,7 +29,7 @@ KEYFILE=$INPUT/cranberry_gbs_all_keys.txt
 # Any variables left blank will be assigned default values 
 
 # Minimum mapping quality score (phred scaled) # to include that variant
-MinQ=40
+MinQ=0
 # Minimum genotype quality score (phred scaled) to include that genotype
 MinGQ=40
 # The minimum average read depth for a variant to include that variant
@@ -94,7 +94,6 @@ vcftools --vcf $VCFIN \
 	--remove-indv ${SAMPLESREMOVE} \
 	--min-alleles 2 \
 	--max-alleles 2 \
-	--minQ $MinQ \
 	--min-meanDP $MinMeanDP \
 	--minDP $MinDP \
 	--minGQ $MinGQ \
