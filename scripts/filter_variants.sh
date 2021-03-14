@@ -109,7 +109,7 @@ mv $VCFOUT.recode.vcf $VCFOUT
 
 
 # Filter hets for minimum allele depth
-python3 $WD/scripts/filter_vcf_hets.py -i $VCFOUT -o ${VCFOUT}.recode1 -d MinDP
+python $WD/scripts/filter_vcf_hets.py -i $VCFOUT -o ${VCFOUT}.recode1 -d $MinDP
 
 # Rename the file
 mv ${VCFOUT}.recode1.vcf $VCFOUT
