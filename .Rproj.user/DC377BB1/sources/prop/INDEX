@@ -27,3 +27,5 @@
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_SAMToGBSdbPlugin.sh="D9C21367"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_SNPQualityProfilerPlugin.sh="7D9414C6"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Ftesting%2Ftassel_pipeline%2Frun_TagExportToFastqPlugin_testing.sh="82C29B1D"
+~%2FRepositories%2Fbioinformatic-utils%2Ffilter_vcf_hets.py="94F119DB"
+~%2FRepositories%2Fbioinformatic-utils%2Fvcf2hapmap.py="B86C1944"
