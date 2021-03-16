@@ -95,7 +95,7 @@ def rrBLUP_hapmap(VCF):
 
         if call == '0/0': # If the call is 0/0, declare as 1
           individual_call += '1'
-        elif call == '0/1' or call = '1/0' : # If the call is 0/1 or 1/0, declare as 0
+        elif call == '0/1' or call == '1/0' : # If the call is 0/1 or 1/0, declare as 0
           individual_call += '0'
         elif call == '1/1': # If the call is 1/1, declare as -1
           individual_call += '-1'
