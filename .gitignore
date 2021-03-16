@@ -8,6 +8,7 @@ tags/
 snps/
 stats/
 alignment/
+imputation/
 testing/input/fastq_files/
 testing/tags/
 testing/database/
