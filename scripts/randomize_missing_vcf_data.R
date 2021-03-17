@@ -22,7 +22,10 @@ vcf_in <- read.vcfR(file = filename)
 
 # Get the genotype data
 gt <- vcf_in@gt
-gt1 <- gt[,-1,drop = FALSE]
+
+# Only use the individuals in the germplasm collection
+colind <- union(1, which(grepl(pattern = "^AM", x = colnames(gt))))
+gt1 <- gt[,colind, drop = FALSE]
 
 # Create a randomization matrix for assigning missing data
 # This proportion is based on the missing data amount observed in the data
@@ -35,7 +38,7 @@ nRep <- 10
 for (i in seq_len(nRep)) {
   
   # Apply over rows
-  gt_miss <- apply(X = gt, MARGIN = 1, FUN = function(row) {
+  gt_miss <- apply(X = gt1, MARGIN = 1, FUN = function(row) {
     # Pull genotypes
     geno <- row[-1]
     
