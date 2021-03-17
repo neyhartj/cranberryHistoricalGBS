@@ -3,7 +3,7 @@
 # SLURM parameters
 # job standard output will go to the file slurm-%j.out (where %j is the job ID)
 
-#SBATCH --time=08:00:00   # walltime limit (HH:MM:SS)
+#SBATCH --time=01:00:00   # walltime limit (HH:MM:SS)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --ntasks-per-node=16   # 8 processor core(s) per node X 2 threads per core
 #SBATCH --mem=32G   # maximum memory per node
@@ -53,7 +53,8 @@ cd $WD
 function runBeagle () { 
   vcfin=$1;
   Ne=$2;
-  vcfout=$OUTPUT/$(echo $vcfin | sed 's,.vcf.gz,_Ne'"$Ne"'_imputed,g');
+  outdir=$3;
+  vcfout=$outdir/$(basename $vcfin | sed 's,.vcf.gz,_Ne'"$Ne"'_imputed,g');
   java -Xmx4g -jar /software/7/apps/beagle-geno/5.0/beagle.16May19.351.jar \
   gt=$vcfin out=$vcfout ne=$Ne burnin=6 iterations=25
 };
@@ -66,12 +67,12 @@ FILES=( $(find $INPUT -name "*.vcf.gz") )
 
 
 ## Beagle Ne 25
-parallel -j 8 runBeagle {} 25 ::: ${FILES[@]}
+parallel -j 8 runBeagle {} 25 $OUTPUT ::: ${FILES[@]}
 
 ## Beagle Ne 100
-parallel -j 8 runBeagle {} 100 ::: ${FILES[@]}
+parallel -j 8 runBeagle {} 100 $OUTPUT ::: ${FILES[@]}
 
 ## Beagle Ne 1000
-parallel -j 8 runBeagle {} 1000 ::: ${FILES[@]}
+parallel -j 8 runBeagle {} 1000 $OUTPUT ::: ${FILES[@]}
 
 
