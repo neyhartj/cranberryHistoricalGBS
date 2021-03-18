@@ -6,9 +6,9 @@
 #SBATCH --time=02:00:00   # walltime limit (HH:MM:SS)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --ntasks-per-node=16   # 8 processor core(s) per node X 2 threads per core
-#SBATCH --mem=48G   # maximum memory per node
+#SBATCH --mem=40G   # maximum memory per node
 #SBATCH --partition=short    # standard node(s)
-#SBATCH --job-name="beagle_imputation_testing"
+#SBATCH --job-name="beagle_imputation"
 #SBATCH --mail-user=jeffrey.neyhart@usda.gov   # email address
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
@@ -71,11 +71,8 @@ vcftools --vcf $OUTPUT/cranberryGBS_snps_to_impute.recode.vcf --remove $OUTPUT/i
 
 ## Run beagle
 
-# Define variables
-$VCFIN1=OUTPUT/cranberryGBS_snps_to_impute_filtered.recode.vcf
-
 # Run the imputation software
-java -Xmx48g -jar /software/7/apps/beagle-geno/5.0/beagle.16May19.351.jar \
+java -Xmx32g -jar /software/7/apps/beagle-geno/5.0/beagle.16May19.351.jar \
 gt=$OUTPUT/cranberryGBS_snps_to_impute_filtered.recode.vcf \
 out=$OUTPUT/cranberryGBS_germplasm_imputed_snps \
 ne=1000 burnin=6 iterations=25
