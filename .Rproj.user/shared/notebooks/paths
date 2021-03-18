@@ -3,6 +3,8 @@ C:/Users/jeffrey.neyhart/OneDrive - USDA/Documents/CranberryLab/Genotyping/cranG
 C:/Users/jeffrey.neyhart/OneDrive - USDA/Documents/CranberryLab/Genotyping/pre2021/cranberryHistoricalGBS/.gitignore="61811091"
 C:/Users/jeffrey.neyhart/OneDrive - USDA/Documents/CranberryLab/Genotyping/pre2021/cranberryHistoricalGBS/input/run_gzip.sh="35A2B8ED"
 C:/Users/jeffrey.neyhart/OneDrive - USDA/Documents/CranberryLab/Genotyping/pre2021/cranberryHistoricalGBS/scripts/analyze_imputation_testing.R="367D34CE"
+C:/Users/jeffrey.neyhart/OneDrive - USDA/Documents/CranberryLab/Genotyping/pre2021/cranberryHistoricalGBS/scripts/filter_variants.sh="CF8BC860"
+C:/Users/jeffrey.neyhart/OneDrive - USDA/Documents/CranberryLab/Genotyping/pre2021/cranberryHistoricalGBS/scripts/prepare_keyfile.R="912E2471"
 C:/Users/jeffrey.neyhart/OneDrive - USDA/Documents/CranberryLab/Genotyping/pre2021/cranberryHistoricalGBS/scripts/randomize_missing_vcf_data.R="7DB7AD17"
 C:/Users/jeffrey.neyhart/OneDrive - USDA/Documents/CranberryLab/Genotyping/pre2021/cranberryHistoricalGBS/scripts/run_beagle_imputation.sh="7A760A7F"
 C:/Users/jeffrey.neyhart/OneDrive - USDA/Documents/CranberryLab/Genotyping/pre2021/cranberryHistoricalGBS/scripts/run_beagle_imputation_testing.sh="09518681"

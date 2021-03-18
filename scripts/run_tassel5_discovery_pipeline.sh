@@ -43,7 +43,7 @@ FASTQDIR=$INPUT/fastq_files
 # Name of database
 DBNAME=$WD/database/cranberry_gbs_discovery.db
 # Name of keyfile
-KEY=$INPUT/cranberry_gbs_all_keys.txt
+KEY=$INPUT/cranberry_gbs_unique_keys.txt
 
 # Name of tag fasta
 TAGFASTA=$WD/tags/gbs_tags_for_alignment.fa.gz
