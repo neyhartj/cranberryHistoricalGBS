@@ -28,8 +28,9 @@ set -e
 set -u
 set -o pipefail
 
-# Load the TASSEL module
+# Load the modules
 module load tassel5
+module load bowtie2
 
 ## Set variables
 
@@ -91,7 +92,7 @@ run_pipeline.pl -Xms1G -Xmx48G -fork1 -TagExportToFastqPlugin \
 -endPlugin -runfork1
 
 # Unzip the fasta file
-gunzip $TAGFASTA
+gunzip -f $TAGFASTA
 
 
 # Run the alignment
