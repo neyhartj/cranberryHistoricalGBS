@@ -54,7 +54,7 @@ cd $WD
 
 # Filter to retain the germplasm collection, then filter SNPs for excessive 
 # missingness (> 50%) and then filter individuals for excessive missingness (> 50%)
-vcftools --vcf $VCFIN --keep $WD/input/cranberry_germplasm_collection_individuals.txt \
+vcftools --vcf $VCFIN --keep $WD/input/cranberry_gbs_germplasm_collection_individuals.txt \
 --recode-INFO-all --recode --stdout | \
 vcftools --vcf - --mac 15 --max-missing 0.5 --recode-INFO-all --recode --out $OUTPUT/cranberryGBS_snps_to_impute
 
