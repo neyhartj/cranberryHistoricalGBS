@@ -16,7 +16,7 @@ impute_test_dir <- file.path(proj_dir, "imputation/beagle_testing/random_missing
 # Read in the VCF ---------------------------------------------------------
 
 # Read in
-filename <- file.path(impute_dir, "snps_for_imputation_indv_filtered.recode.vcf")
+filename <- file.path(impute_dir, "snps_for_imputation_testing_indv_filtered.recode.vcf")
 vcf_in <- read.vcfR(file = filename)
 
 
