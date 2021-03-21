@@ -94,7 +94,7 @@ vcftools --vcf $VCFIN \
 	--remove-indv ${SAMPLESREMOVE} \
 	--min-alleles 2 \
 	--max-alleles 2 \
-        --not-chr UNKNOWN \
+  --not-chr UNKNOWN \
 	--min-meanDP $MinMeanDP \
 	--minDP $MinDP \
 	--minGQ $MinGQ \
