@@ -22,11 +22,33 @@ module load vcftools
 WD=/project/cranberrygbs/cranberryHistoricalGBS/
 
 # Name of input directory
-INPUT=$WD/snps/
-
+INPUT=$WD/input/
 # Output directory
 OUTPUT=$INPUT
+# SNP dir
+SNPS=$WD/snps/
+
+# Name of the VCF file
+VCFIN=$SNPS/cranberryGBS_production_snps_filtered.vcf.gz
 
 # Change working directory
 cd $WD
+
+##
+
+# Find the files listing individuals for each population
+files=$(find $INPUT -name "family*")
+
+# Iterate over the list of files
+for inputfile in $files; do
+
+  # Create the output filename
+  outfile=$SNPS/cranberryGBS_$(basename $inputfile | grep -o "family_.*_individuals")
+  
+  # Run vcftools 
+  vcftools --gzvcf $VCFIN --mac 10 --keep $inputfile --recode --recode-INFO-all --out $outfile
+  
+done
+
+
 

@@ -43,7 +43,7 @@ INPUT=$WD/snps/
 OUTPUT=$WD/imputation/beagle_imputation
 
 # Name of input vcf
-VCFIN=$INPUT/cranberryGBS_production_snps_filtered.vcf
+VCFIN=$INPUT/cranberryGBS_production_snps_filtered.vcf.gz
 
 
 # Change working directory
@@ -54,7 +54,7 @@ cd $WD
 
 # Filter to retain the germplasm collection, then filter SNPs for excessive 
 # missingness (> 50%) and then filter individuals for excessive missingness (> 50%)
-vcftools --vcf $VCFIN --keep $WD/input/cranberry_gbs_germplasm_collection_individuals.txt \
+vcftools --gzvcf $VCFIN --keep $WD/input/cranberry_gbs_germplasm_collection_individuals.txt \
 --recode-INFO-all --recode --stdout | \
 vcftools --vcf - --mac 15 --max-missing 0.5 --recode-INFO-all --recode --out $OUTPUT/cranberryGBS_snps_to_impute
 
@@ -62,7 +62,7 @@ vcftools --vcf - --mac 15 --max-missing 0.5 --recode-INFO-all --recode --out $OU
 vcftools --vcf $OUTPUT/cranberryGBS_snps_to_impute.recode.vcf --missing-indv \
 --out $OUTPUT/cranberryGBS_germplasm_missingness
 
-# Filter out individuals witbh missingness > 0.50
+# Filter out individuals with missingness > 0.50
 awk 'NR > 1 { if ($5 > 0.50) print $1 }' $OUTPUT/cranberryGBS_germplasm_missingness.imiss > $OUTPUT/individual_remove_imputation.txt
 
 vcftools --vcf $OUTPUT/cranberryGBS_snps_to_impute.recode.vcf --remove $OUTPUT/individual_remove_imputation.txt \
