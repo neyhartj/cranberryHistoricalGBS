@@ -44,7 +44,8 @@ FASTQDIR=$INPUT/fastq_files
 # Name of database
 DBNAME=$WD/database/cranberry_gbs_discovery.db
 # Name of keyfile
-KEY=$INPUT/cranberry_gbs_unique_keys.txt
+# KEY=$INPUT/cranberry_gbs_unique_keys.txt
+KEY=$INPUT/cranberry_gbs_unique_keys_resolved_duplicates.txt
 
 # Name of tag fasta
 TAGFASTA=$WD/tags/gbs_tags_for_alignment.fa.gz
@@ -139,6 +140,7 @@ run_pipeline.pl -Xms1G -Xmx48G -fork1 -SNPQualityProfilerPlugin \
 
 
 ## This took 70 minutes for 13 flowcell-lanes
+
 
 
 

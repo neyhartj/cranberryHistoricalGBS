@@ -42,7 +42,9 @@ FASTQDIR=$INPUT/fastq_files
 # Name of database
 DBNAME=$WD/database/cranberry_gbs_discovery.db
 # Name of keyfile
-KEY=$INPUT/cranberry_gbs_unique_keys.txt
+# KEY=$INPUT/cranberry_gbs_unique_keys.txt
+KEY=$INPUT/cranberry_gbs_unique_keys_resolved_duplicates.txt
+
 
 # Output file name
 OUTFILE=$WD/snps/cranberryGBS_production_snps.vcf
