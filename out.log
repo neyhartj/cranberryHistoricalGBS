@@ -12,7 +12,5 @@ Parameters as interpreted:
 Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=.,Type=Float,Description="Normalized, Phred-scaled likelihoods for AA,AB,BB genotypes where A=ref and B=alt; not applicable if site is not biallelic">
 Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=.,Type=Float,Description="Normalized, Phred-scaled likelihoods for AA,AB,BB genotypes where A=ref and B=alt; not applicable if site is not biallelic">
 Keeping individuals in 'keep' list
-After filtering, kept 400 out of 1023 Individuals
+After filtering, kept 258 out of 1023 Individuals
 Outputting VCF file...
-After filtering, kept 19307 out of a possible 19307 Sites
-Run Time = 27.00 seconds

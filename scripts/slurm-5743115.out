@@ -1,0 +1,41 @@
+
+VCFtools - 0.1.16
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+Parameters as interpreted:
+	--vcf /project/cranberrygbs/cranberryHistoricalGBS//snps//cranberryGBS_production_snps_filtered.vcf
+	--vcf [stdin]
+	--keep /project/cranberrygbs/cranberryHistoricalGBS//input/cranberry_gbs_germplasm_collection_individuals.txt
+	--recode-INFO-all
+	--recode-INFO-all
+	--recode
+	--stdout
+
+	--mac 15
+	--max-missing 0.5
+	--out /project/cranberrygbs/cranberryHistoricalGBS//imputation/beagle_imputation/cranberryGBS_snps_to_impute
+	--recode
+
+stat error: No such file or directory
+Error: Can't determine file type of /project/cranberrygbs/cranberryHistoricalGBS//snps//cranberryGBS_production_snps_filtered.vcf
+After filtering, kept 0 out of 0 Individuals
+Outputting VCF file...
+After filtering, kept 0 out of a possible 0 Sites
+File does not contain any sites
+Run Time = 0.00 seconds
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf /project/cranberrygbs/cranberryHistoricalGBS//imputation/beagle_imputation/cranberryGBS_snps_to_impute.recode.vcf
+	--missing-indv
+	--out /project/cranberrygbs/cranberryHistoricalGBS//imputation/beagle_imputation/cranberryGBS_germplasm_missingness
+
+After filtering, kept 0 out of 0 Individuals
+Error: Require Genotypes in VCF file in order to output Missingness Statistics.
