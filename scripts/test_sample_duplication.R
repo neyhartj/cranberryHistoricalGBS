@@ -261,7 +261,7 @@ keyfile1 <- keyfile %>%
   left_join(., select(individuals_to_merge_list1, contains("sample_name")), by = c("SeedLot" = "former_marker_sample_name")) %>%
   # Edit the seedlot names
   mutate(SeedLot = ifelse(is.na(marker_sample_name), SeedLot, marker_sample_name),
-         FullSampleName = paste0(SeedLot, ":", LibraryPrepID)) %>%
+         FullSampleName = ifelse(is.na(marker_sample_name), FullSampleName, paste0(SeedLot, ":", LibraryPrepID))) %>%
   select(-marker_sample_name)
 
 # Save this new keyfile
