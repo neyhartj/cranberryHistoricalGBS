@@ -19,7 +19,8 @@ VCFOUT=$WD/snps/cranberryGBS_production_snps_filtered.vcf
 # The keyfile produced in the demultiplexing step. Note: this file should
 ## look like the following: Samples+barcode+ID_${PROJECT}.txt
 ## One may provide multiple keyfiles, separated by a comma (',').
-KEYFILE=$INPUT/cranberry_gbs_all_keys.txt
+#KEYFILE=$INPUT/cranberry_gbs_all_keys.txt
+KEYFILE=$INPUT/cranberry_gbs_unique_keys_resolved_duplicates.txt
 
 # You may change the filtering parameters below:
 # Note: by default, this filtering script will extract only biallelic 
@@ -94,7 +95,7 @@ vcftools --vcf $VCFIN \
 	--remove-indv ${SAMPLESREMOVE} \
 	--min-alleles 2 \
 	--max-alleles 2 \
-  --not-chr UNKNOWN \
+        --not-chr UNKNOWN \
 	--min-meanDP $MinMeanDP \
 	--minDP $MinDP \
 	--minGQ $MinGQ \
