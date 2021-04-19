@@ -22,9 +22,9 @@ C574FACXX	1	CTAAGAA	CNJ02_1_20	Cranberry2_1	D	3	250382072	450020689	EcoT22I	D03	
 C574FACXX	1	GCGTTAA	CQA	Cranberry2_1	E	3	250382073	450020689	EcoT22I	E03	Cranberry2_1	E03	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382073
 C574FACXX	1	GTGTGCCA	MQA	Cranberry2_1	F	3	250382074	450020689	EcoT22I	F03	Cranberry2_1	F03	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382074
 C574FACXX	1	TAGTGCCG	STA	Cranberry2_1	G	3	250382075	450020689	EcoT22I	G03	Cranberry2_1	G03	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382075
-C574FACXX	1	AGGATCCG	CQB	Cranberry2_1	H	3	250382076	450020689	EcoT22I	H03	Cranberry2_1	H03	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382076
-C574FACXX	1	CGGCA	MQB	Cranberry2_1	A	4	250382077	450020689	EcoT22I	A04	Cranberry2_1	A04	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382077
-C574FACXX	1	CAGTGA	STB	Cranberry2_1	B	4	250382078	450020689	EcoT22I	B04	Cranberry2_1	B04	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382078
+C574FACXX	1	AGGATCCG	CQB	Cranberry2_1	H	3	250382076	450020689	EcoT22I	H03	Cranberry2_1	H03	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382073
+C574FACXX	1	CGGCA	MQB	Cranberry2_1	A	4	250382077	450020689	EcoT22I	A04	Cranberry2_1	A04	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382074
+C574FACXX	1	CAGTGA	STB	Cranberry2_1	B	4	250382078	450020689	EcoT22I	B04	Cranberry2_1	B04	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382075
 C574FACXX	1	GGTCACG	CNJ02_1_21	Cranberry2_1	D	4	250382080	450020689	EcoT22I	D04	Cranberry2_1	D04	Vaccinium	macrocarpon	CQxMQ	heterozygous	CNJ02_1_21	CNJ02_1_21:250382080
 C574FACXX	1	CTCAAGA	CNJ02_1_22	Cranberry2_1	E	4	250382081	450020689	EcoT22I	E04	Cranberry2_1	E04	Vaccinium	macrocarpon	CQxMQ	heterozygous	CNJ02_1_22	CNJ02_1_22:250382081
 C574FACXX	1	AAGACTCA	CNJ02_1_23	Cranberry2_1	F	4	250382082	450020689	EcoT22I	F04	Cranberry2_1	F04	Vaccinium	macrocarpon	CQxMQ	heterozygous	CNJ02_1_23	CNJ02_1_23:250382082
@@ -164,12 +164,12 @@ C574FACXX	2	AGGCTGA	CNJ02_1_156	Cranberry2_2	C	9	250382246	450020690	EcoT22I	C09
 C574FACXX	2	GGCTATA	CNJ04_2_11	Cranberry2_2	E	9	250382248	450020690	EcoT22I	E09	Cranberry2_2	E09	Vaccinium	macrocarpon	MQxST	heterozygous	CNJ04_2_11	CNJ04_2_11:250382248
 C574FACXX	2	CCTAATCG	CNJ04_2_16	Cranberry2_2	F	9	250382249	450020690	EcoT22I	F09	Cranberry2_2	F09	Vaccinium	macrocarpon	MQxST	heterozygous	CNJ04_2_16	CNJ04_2_16:250382249
 C574FACXX	2	CTCAAGCG	CNJ04_2_18	Cranberry2_2	G	9	250382250	450020690	EcoT22I	G09	Cranberry2_2	G09	Vaccinium	macrocarpon	MQxST	heterozygous	CNJ04_2_18	CNJ04_2_18:250382250
-C574FACXX	2	CGCCATCG	CQC	Cranberry2_2	H	9	250382251	450020690	EcoT22I	H09	Cranberry2_2	H09	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382251
-C574FACXX	2	ACCTAG	MQC	Cranberry2_2	A	10	250382252	450020690	EcoT22I	A10	Cranberry2_2	A10	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382252
-C574FACXX	2	GGACTAA	STC	Cranberry2_2	B	10	250382253	450020690	EcoT22I	B10	Cranberry2_2	B10	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382253
-C574FACXX	2	GCAATAG	CQD	Cranberry2_2	C	10	250382254	450020690	EcoT22I	C10	Cranberry2_2	C10	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382254
-C574FACXX	2	AACGTAG	MQD	Cranberry2_2	D	10	250382255	450020690	EcoT22I	D10	Cranberry2_2	D10	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382255
-C574FACXX	2	CAGGTCG	STD	Cranberry2_2	E	10	250382256	450020690	EcoT22I	E10	Cranberry2_2	E10	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382256
+C574FACXX	2	CGCCATCG	CQC	Cranberry2_2	H	9	250382251	450020690	EcoT22I	H09	Cranberry2_2	H09	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382073
+C574FACXX	2	ACCTAG	MQC	Cranberry2_2	A	10	250382252	450020690	EcoT22I	A10	Cranberry2_2	A10	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382074
+C574FACXX	2	GGACTAA	STC	Cranberry2_2	B	10	250382253	450020690	EcoT22I	B10	Cranberry2_2	B10	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382075
+C574FACXX	2	GCAATAG	CQD	Cranberry2_2	C	10	250382254	450020690	EcoT22I	C10	Cranberry2_2	C10	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382073
+C574FACXX	2	AACGTAG	MQD	Cranberry2_2	D	10	250382255	450020690	EcoT22I	D10	Cranberry2_2	D10	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382074
+C574FACXX	2	CAGGTCG	STD	Cranberry2_2	E	10	250382256	450020690	EcoT22I	E10	Cranberry2_2	E10	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382075
 C574FACXX	2	CGCTTCCA	CNJ02_1_157	Cranberry2_2	F	10	250382257	450020690	EcoT22I	F10	Cranberry2_2	F10	Vaccinium	macrocarpon	CQxMQ	heterozygous	CNJ02_1_157	CNJ02_1_157:250382257
 C574FACXX	2	TCTTGCAA	CNJ02_1_167	Cranberry2_2	G	10	250382258	450020690	EcoT22I	G10	Cranberry2_2	G10	Vaccinium	macrocarpon	CQxMQ	heterozygous	CNJ02_1_167	CNJ02_1_167:250382258
 C574FACXX	2	TCTACGAA	CNJ02_1_171	Cranberry2_2	H	10	250382259	450020690	EcoT22I	H10	Cranberry2_2	H10	Vaccinium	macrocarpon	CQxMQ	heterozygous	CNJ02_1_171	CNJ02_1_171:250382259
@@ -226,12 +226,12 @@ C574FACXX	3	AGTCCG	CNJ04_2_33	Cranberry2_3	B	5	250382340	450020691	EcoT22I	B05	C
 C574FACXX	3	TGAGGCG	CNJ04_2_34	Cranberry2_3	C	5	250382341	450020691	EcoT22I	C05	Cranberry2_3	C05	Vaccinium	macrocarpon	STxMQ	heterozygous	CNJ04_2_34	CNJ04_2_34:250382341
 C574FACXX	3	TCGTAGA	CNJ04_2_35	Cranberry2_3	D	5	250382342	450020691	EcoT22I	D05	Cranberry2_3	D05	Vaccinium	macrocarpon	STxMQ	heterozygous	CNJ04_2_35	CNJ04_2_35:250382342
 C574FACXX	3	CGTGGAG	CNJ04_2_36	Cranberry2_3	E	5	250382343	450020691	EcoT22I	E05	Cranberry2_3	E05	Vaccinium	macrocarpon	STxMQ	heterozygous	CNJ04_2_36	CNJ04_2_36:250382343
-C574FACXX	3	CCACTACG	STE	Cranberry2_3	F	5	250382344	450020691	EcoT22I	F05	Cranberry2_3	F05	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382344
-C574FACXX	3	CCTGCACG	CQE	Cranberry2_3	G	5	250382345	450020691	EcoT22I	G05	Cranberry2_3	G05	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382345
-C574FACXX	3	CTGACACG	MQE	Cranberry2_3	H	5	250382346	450020691	EcoT22I	H05	Cranberry2_3	H05	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382346
-C574FACXX	3	ACGAG	STF	Cranberry2_3	A	6	250382347	450020691	EcoT22I	A06	Cranberry2_3	A06	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382347
-C574FACXX	3	GCATGG	CQF	Cranberry2_3	B	6	250382348	450020691	EcoT22I	B06	Cranberry2_3	B06	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382348
-C574FACXX	3	GACTAGG	MQF	Cranberry2_3	C	6	250382349	450020691	EcoT22I	C06	Cranberry2_3	C06	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382349
+C574FACXX	3	CCACTACG	STE	Cranberry2_3	F	5	250382344	450020691	EcoT22I	F05	Cranberry2_3	F05	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382075
+C574FACXX	3	CCTGCACG	CQE	Cranberry2_3	G	5	250382345	450020691	EcoT22I	G05	Cranberry2_3	G05	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382073
+C574FACXX	3	CTGACACG	MQE	Cranberry2_3	H	5	250382346	450020691	EcoT22I	H05	Cranberry2_3	H05	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382074
+C574FACXX	3	ACGAG	STF	Cranberry2_3	A	6	250382347	450020691	EcoT22I	A06	Cranberry2_3	A06	Vaccinium	macrocarpon	BenLearxPottersFavorite	heterozygous	Stevens	Stevens:250382075
+C574FACXX	3	GCATGG	CQF	Cranberry2_3	B	6	250382348	450020691	EcoT22I	B06	Cranberry2_3	B06	Vaccinium	macrocarpon	StevensxBenLear	heterozygous	CrimsonQueen	CrimsonQueen:250382073
+C574FACXX	3	GACTAGG	MQF	Cranberry2_3	C	6	250382349	450020691	EcoT22I	C06	Cranberry2_3	C06	Vaccinium	macrocarpon	Howes x Searles x LeMunyon	heterozygous	MullicaQueen	MullicaQueen:250382074
 C574FACXX	3	GTACGCG	CNJ04_21_1	Cranberry2_3	E	6	250382351	450020691	EcoT22I	E06	Cranberry2_3	E06	Vaccinium	macrocarpon	STxMQ	heterozygous	CNJ04_21_1	CNJ04_21_1:250382351
 C574FACXX	3	GGTTCGCA	CNJ04_21_2	Cranberry2_3	F	6	250382352	450020691	EcoT22I	F06	Cranberry2_3	F06	Vaccinium	macrocarpon	STxMQ	heterozygous	CNJ04_21_2	CNJ04_21_2:250382352
 C574FACXX	3	TTAAGCAA	CNJ04_21_3	Cranberry2_3	G	6	250382353	450020691	EcoT22I	G06	Cranberry2_3	G06	Vaccinium	macrocarpon	STxMQ	heterozygous	CNJ04_21_3	CNJ04_21_3:250382353
@@ -303,7 +303,7 @@ C50VDACXX	5	GGATA	P19	Griglesky1	H	2	250353366	450020216	EcoT22I	H02	Griglesky1	
 C50VDACXX	5	CTAAGCA	P20	Griglesky1	A	3	250353367	450020216	EcoT22I	A03	Griglesky1	A03	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P20	P20:250353367
 C50VDACXX	5	ATTAT	P22	Griglesky1	B	3	250353368	450020216	EcoT22I	B03	Griglesky1	B03	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P22	P22:250353368
 C50VDACXX	5	GCGCTCA	P23	Griglesky1	C	3	250353369	450020216	EcoT22I	C03	Griglesky1	C03	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P23	P23:250353369
-C50VDACXX	5	ACTGCGAT	GH1	Griglesky1	D	3	250353370	450020216	EcoT22I	D03	Griglesky1	D03	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250353370
+C50VDACXX	5	ACTGCGAT	GH1	Griglesky1	D	3	250353370	450020216	EcoT22I	D03	Griglesky1	D03	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250382389
 C50VDACXX	5	TTCGTT	BG95	Griglesky1	E	3	250353371	450020216	EcoT22I	E03	Griglesky1	E03	Vaccinium	macrocarpon	NA	CrossPollination	BG95	BG95:250353371
 C50VDACXX	5	ATATAA	P24	Griglesky1	F	3	250353372	450020216	EcoT22I	F03	Griglesky1	F03	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P24	P24:250353372
 C50VDACXX	5	TGGCAACAGA	P25	Griglesky1	G	3	250353373	450020216	EcoT22I	G03	Griglesky1	G03	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P25	P25:250353373
@@ -408,8 +408,8 @@ C50VDACXX	6	CACCA	P142	Griglesky2	B	4	250353630	450020218	EcoT22I	B04	Griglesky2
 C50VDACXX	6	AATTAG	P143	Griglesky2	C	4	250353631	450020218	EcoT22I	C04	Griglesky2	C04	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P143	P143:250353631
 C50VDACXX	6	GGAACGA	P144	Griglesky2	D	4	250353632	450020218	EcoT22I	D04	Griglesky2	D04	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P144	P144:250353632
 C50VDACXX	6	ACAACT	P145	Griglesky2	E	4	250353633	450020218	EcoT22I	E04	Griglesky2	E04	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P145	P145:250353633
-C50VDACXX	6	ACTGCT	GH1	Griglesky2	F	4	250353634	450020218	EcoT22I	F04	Griglesky2	F04	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250353634
-C50VDACXX	6	CGTGGACAGT	BG95	Griglesky2	G	4	250353635	450020218	EcoT22I	G04	Griglesky2	G04	Vaccinium	macrocarpon	NA	CrossPollination	BG95	BG95:250353635
+C50VDACXX	6	ACTGCT	GH1	Griglesky2	F	4	250353634	450020218	EcoT22I	F04	Griglesky2	F04	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250382389
+C50VDACXX	6	CGTGGACAGT	BG95	Griglesky2	G	4	250353635	450020218	EcoT22I	G04	Griglesky2	G04	Vaccinium	macrocarpon	NA	CrossPollination	BG95	BG95:250353371
 C50VDACXX	6	TGCTT	P147	Griglesky2	A	5	250353637	450020218	EcoT22I	A05	Griglesky2	A05	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P147	P147:250353637
 C50VDACXX	6	GCAAGCCAT	P148	Griglesky2	B	5	250353638	450020218	EcoT22I	B05	Griglesky2	B05	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P148	P148:250353638
 C50VDACXX	6	CGCACCAATT	P150	Griglesky2	C	5	250353639	450020218	EcoT22I	C05	Griglesky2	C05	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P150	P150:250353639
@@ -567,8 +567,8 @@ C50VDACXX	7	GCCAACAAGA	P328	Griglesky3	B	12	250353821	450020219	EcoT22I	B12	Grig
 C50VDACXX	7	TGCCGCAT	P329	Griglesky3	C	12	250353822	450020219	EcoT22I	C12	Griglesky3	C12	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P329	P329:250353822
 C50VDACXX	7	CGTGTCA	P331	Griglesky3	D	12	250353823	450020219	EcoT22I	D12	Griglesky3	D12	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P331	P331:250353823
 C50VDACXX	7	CAACCACACA	P334	Griglesky3	E	12	250353824	450020219	EcoT22I	E12	Griglesky3	E12	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P334	P334:250353824
-C50VDACXX	7	GCTCCGA	GH1	Griglesky3	F	12	250353825	450020219	EcoT22I	F12	Griglesky3	F12	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250353825
-C50VDACXX	7	TCAGAGAT	BG95	Griglesky3	G	12	250353826	450020219	EcoT22I	G12	Griglesky3	G12	Vaccinium	macrocarpon	NA	CrossPollination	BG95	BG95:250353826
+C50VDACXX	7	GCTCCGA	GH1	Griglesky3	F	12	250353825	450020219	EcoT22I	F12	Griglesky3	F12	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250382389
+C50VDACXX	7	TCAGAGAT	BG95	Griglesky3	G	12	250353826	450020219	EcoT22I	G12	Griglesky3	G12	Vaccinium	macrocarpon	NA	CrossPollination	BG95	BG95:250353371
 C50VDACXX	8	TGACGCCA	P339	Griglesky4	A	1	250353986	450020221	EcoT22I	A01	Griglesky4	A01	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P339	P339:250353986
 C50VDACXX	8	CAGATA	P340	Griglesky4	B	1	250353987	450020221	EcoT22I	B01	Griglesky4	B01	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P340	P340:250353987
 C50VDACXX	8	GAAGTG	P341	Griglesky4	C	1	250353988	450020221	EcoT22I	C01	Griglesky4	C01	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P341	P341:250353988
@@ -578,8 +578,8 @@ C50VDACXX	8	ATAGAT	P345	Griglesky4	F	1	250353991	450020221	EcoT22I	F01	Griglesky
 C50VDACXX	8	CCGAACA	P347	Griglesky4	G	1	250353992	450020221	EcoT22I	G01	Griglesky4	G01	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P347	P347:250353992
 C50VDACXX	8	GGAAGACAT	P348	Griglesky4	H	1	250353993	450020221	EcoT22I	H01	Griglesky4	H01	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P348	P348:250353993
 C50VDACXX	8	GGCTTA	P349	Griglesky4	A	2	250353994	450020221	EcoT22I	A02	Griglesky4	A02	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P349	P349:250353994
-C50VDACXX	8	GAGCGACAT	GH1	Griglesky4	C	2	250353996	450020221	EcoT22I	C02	Griglesky4	C02	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250353996
-C50VDACXX	8	CCTTGCCATT	BG	Griglesky4	D	2	250353997	450020221	EcoT22I	D02	Griglesky4	D02	Vaccinium	macrocarpon	NA	CrossPollination	BG	BG:250353997
+C50VDACXX	8	GAGCGACAT	GH1	Griglesky4	C	2	250353996	450020221	EcoT22I	C02	Griglesky4	C02	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250382389
+C50VDACXX	8	CCTTGCCATT	BG	Griglesky4	D	2	250353997	450020221	EcoT22I	D02	Griglesky4	D02	Vaccinium	macrocarpon	NA	CrossPollination	BG	BG:250382400
 C50VDACXX	8	GGTATA	P352	Griglesky4	E	2	250353998	450020221	EcoT22I	E02	Griglesky4	E02	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P352	P352:250353998
 C50VDACXX	8	TCTTGG	P353	Griglesky4	F	2	250353999	450020221	EcoT22I	F02	Griglesky4	F02	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P353	P353:250353999
 C50VDACXX	8	GGTGT	P354	Griglesky4	G	2	250354000	450020221	EcoT22I	G02	Griglesky4	G02	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P354	P354:250354000
@@ -693,8 +693,8 @@ C511KACXX	2	CACCA	P142	Griglesky2	B	4	250353630	450020218	EcoT22I	B04	Griglesky2
 C511KACXX	2	AATTAG	P143	Griglesky2	C	4	250353631	450020218	EcoT22I	C04	Griglesky2	C04	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P143	P143:250353631
 C511KACXX	2	GGAACGA	P144	Griglesky2	D	4	250353632	450020218	EcoT22I	D04	Griglesky2	D04	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P144	P144:250353632
 C511KACXX	2	ACAACT	P145	Griglesky2	E	4	250353633	450020218	EcoT22I	E04	Griglesky2	E04	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P145	P145:250353633
-C511KACXX	2	ACTGCT	GH1	Griglesky2	F	4	250353634	450020218	EcoT22I	F04	Griglesky2	F04	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250353634
-C511KACXX	2	CGTGGACAGT	BG95	Griglesky2	G	4	250353635	450020218	EcoT22I	G04	Griglesky2	G04	Vaccinium	macrocarpon	NA	CrossPollination	BG95	BG95:250353635
+C511KACXX	2	ACTGCT	GH1	Griglesky2	F	4	250353634	450020218	EcoT22I	F04	Griglesky2	F04	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250382389
+C511KACXX	2	CGTGGACAGT	BG95	Griglesky2	G	4	250353635	450020218	EcoT22I	G04	Griglesky2	G04	Vaccinium	macrocarpon	NA	CrossPollination	BG95	BG95:250353371
 C511KACXX	2	TGCTT	P147	Griglesky2	A	5	250353637	450020218	EcoT22I	A05	Griglesky2	A05	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P147	P147:250353637
 C511KACXX	2	GCAAGCCAT	P148	Griglesky2	B	5	250353638	450020218	EcoT22I	B05	Griglesky2	B05	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P148	P148:250353638
 C511KACXX	2	CGCACCAATT	P150	Griglesky2	C	5	250353639	450020218	EcoT22I	C05	Griglesky2	C05	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P150	P150:250353639
@@ -768,8 +768,8 @@ C511KACXX	3	ATAGAT	P345	Griglesky4	F	1	250353991	450020221	EcoT22I	F01	Griglesky
 C511KACXX	3	CCGAACA	P347	Griglesky4	G	1	250353992	450020221	EcoT22I	G01	Griglesky4	G01	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P347	P347:250353992
 C511KACXX	3	GGAAGACAT	P348	Griglesky4	H	1	250353993	450020221	EcoT22I	H01	Griglesky4	H01	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P348	P348:250353993
 C511KACXX	3	GGCTTA	P349	Griglesky4	A	2	250353994	450020221	EcoT22I	A02	Griglesky4	A02	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P349	P349:250353994
-C511KACXX	3	GAGCGACAT	GH1	Griglesky4	C	2	250353996	450020221	EcoT22I	C02	Griglesky4	C02	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250353996
-C511KACXX	3	CCTTGCCATT	BG	Griglesky4	D	2	250353997	450020221	EcoT22I	D02	Griglesky4	D02	Vaccinium	macrocarpon	NA	CrossPollination	BG	BG:250353997
+C511KACXX	3	GAGCGACAT	GH1	Griglesky4	C	2	250353996	450020221	EcoT22I	C02	Griglesky4	C02	Vaccinium	macrocarpon	NA	CrossPollination	GH1	GH1:250382389
+C511KACXX	3	CCTTGCCATT	BG	Griglesky4	D	2	250353997	450020221	EcoT22I	D02	Griglesky4	D02	Vaccinium	macrocarpon	NA	CrossPollination	BG	BG:250382400
 C511KACXX	3	GGTATA	P352	Griglesky4	E	2	250353998	450020221	EcoT22I	E02	Griglesky4	E02	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P352	P352:250353998
 C511KACXX	3	TCTTGG	P353	Griglesky4	F	2	250353999	450020221	EcoT22I	F02	Griglesky4	F02	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P353	P353:250353999
 C511KACXX	3	GGTGT	P354	Griglesky4	G	2	250354000	450020221	EcoT22I	G02	Griglesky4	G02	Vaccinium	macrocarpon	BG95xGH1	CrossPollination	P354	P354:250354000
