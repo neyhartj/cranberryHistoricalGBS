@@ -10,10 +10,10 @@ Parameters as interpreted:
 	--stdout
 
 Using zlib version: 1.2.7
-Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=G,Type=Float,Description="Normalized, Phred-scaled likelihoods for AA,AB,BB genotypes where A=ref and B=alt; not applicable if site is not biallelic">
-Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=G,Type=Float,Description="Normalized, Phred-scaled likelihoods for AA,AB,BB genotypes where A=ref and B=alt; not applicable if site is not biallelic">
+Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=.,Type=Float,Description="Normalized, Phred-scaled likelihoods for AA,AB,BB genotypes where A=ref and B=alt; not applicable if site is not biallelic">
+Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=.,Type=Float,Description="Normalized, Phred-scaled likelihoods for AA,AB,BB genotypes where A=ref and B=alt; not applicable if site is not biallelic">
 Keeping individuals in 'keep' list
-After filtering, kept 366 out of 989 Individuals
+After filtering, kept 352 out of 975 Individuals
 Outputting VCF file...
-After filtering, kept 18654 out of a possible 18654 Sites
-Run Time = 25.00 seconds
+After filtering, kept 18671 out of a possible 18671 Sites
+Run Time = 24.00 seconds

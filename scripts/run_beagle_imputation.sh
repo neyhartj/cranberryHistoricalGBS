@@ -3,7 +3,7 @@
 # SLURM parameters
 # job standard output will go to the file slurm-%j.out (where %j is the job ID)
 
-#SBATCH --time=02:00:00   # walltime limit (HH:MM:SS)
+#SBATCH --time=01:00:00   # walltime limit (HH:MM:SS)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --ntasks-per-node=16   # 8 processor core(s) per node X 2 threads per core
 #SBATCH --mem=40G   # maximum memory per node
@@ -47,7 +47,7 @@ VCFIN=$INPUT/cranberryGBS_production_snps_filtered.vcf.gz
 
 
 # Change working directory
-cd $WDls 
+cd $WD 
 
 
 ## Filter
