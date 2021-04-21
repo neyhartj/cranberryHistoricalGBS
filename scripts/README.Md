@@ -13,9 +13,13 @@ Details of the `scripts` folder.
 
 2. run_tassel5_production_pipeline.sh  
 
-## Filtering the variants
+## Filtering the variants and separating populations
 
 3. run_filter_variants.sh
 
+4. run_mapping_pop_separation.sh
 
+## Imputation
+
+5. run_beagle_imputation.sh
 

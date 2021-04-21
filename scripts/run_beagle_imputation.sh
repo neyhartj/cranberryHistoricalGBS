@@ -47,7 +47,7 @@ VCFIN=$INPUT/cranberryGBS_production_snps_filtered.vcf.gz
 
 
 # Change working directory
-cd $WD
+cd $WDls 
 
 
 ## Filter

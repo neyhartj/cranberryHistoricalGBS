@@ -34,7 +34,7 @@ metadata1 <- metadata %>%
 
 
 # Read in the VCF
-filename <- file.path(impute_dir, "cranberryGBS_snps_to_impute_filtered.recode.vcf")
+filename <- file.path(impute_dir, "cranberryGBS_snps_to_impute_filtered_firstround.vcf.gz")
 vcf_in <- read.vcfR(file = filename)
 
 # Change column names
@@ -242,6 +242,7 @@ individuals_to_merge_list1 <- individuals_to_merge_list %>%
            left_join(., select(metadata1, formatted_name, marker_sample_name), by = c("merged_name" = "formatted_name")) )
 
 
+
 individuals_to_remove <- setdiff(unique(subset(duplicate_resolution, remove != "merge", remove, drop = TRUE)), individuals_to_merge)
 
 # Use the individual names to lookup sample names for removal
@@ -254,15 +255,21 @@ individuals_to_remove_marker_names <- metadata1 %>%
 ## to merge using a common (first) name
 keyfile <- read_tsv(file = file.path(proj_dir, "input/cranberry_gbs_unique_keys.txt"))
 
+# Make sure the marker sample name get the library prep ID
+individuals_to_merge_list2 <- individuals_to_merge_list1 %>%
+  left_join(., distinct(keyfile, SeedLot, LibraryPrepID), by = c("marker_sample_name" = "SeedLot")) %>%
+  rename(library_prep_ID = LibraryPrepID)
+
+
 # Remove the individuals to remove
 keyfile1 <- keyfile %>%
   filter(! SeedLot %in% individuals_to_remove_marker_names) %>%
   # Merge individuals using the first sample name
-  left_join(., select(individuals_to_merge_list1, contains("sample_name")), by = c("SeedLot" = "former_marker_sample_name")) %>%
+  left_join(., select(individuals_to_merge_list2, contains("sample_name"), library_prep_ID), by = c("SeedLot" = "former_marker_sample_name")) %>%
   # Edit the seedlot names
   mutate(SeedLot = ifelse(is.na(marker_sample_name), SeedLot, marker_sample_name),
-         FullSampleName = ifelse(is.na(marker_sample_name), FullSampleName, paste0(SeedLot, ":", LibraryPrepID))) %>%
-  select(-marker_sample_name)
+         FullSampleName = ifelse(is.na(marker_sample_name), FullSampleName, paste0(SeedLot, ":", library_prep_ID))) %>%
+  select(-marker_sample_name, -library_prep_ID)
 
 # Save this new keyfile
 write_tsv(x = keyfile1, path = file.path(proj_dir, "input/cranberry_gbs_unique_keys_resolved_duplicates.txt"))
