@@ -23,7 +23,7 @@ keyfile <- file.path(proj_dir, "input/cranberry_gbs_unique_keys_resolved_duplica
 unphased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/unphased_marker_genotype_db.RData")
 
 # Filepath of phased genotype database
-phased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/phased_marker_genotype_db.vcf")
+phased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/phased_marker_genotype_db.RData")
 
 
 
