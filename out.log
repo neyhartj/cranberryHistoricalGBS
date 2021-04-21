@@ -1,0 +1,19 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /project/cranberrygbs/cranberryHistoricalGBS//snps//cranberryGBS_production_snps_filtered.vcf.gz
+	--keep /project/cranberrygbs/cranberryHistoricalGBS//input/cranberry_gbs_germplasm_collection_individuals.txt
+	--recode-INFO-all
+	--recode
+	--stdout
+
+Using zlib version: 1.2.7
+Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=G,Type=Float,Description="Normalized, Phred-scaled likelihoods for AA,AB,BB genotypes where A=ref and B=alt; not applicable if site is not biallelic">
+Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=G,Type=Float,Description="Normalized, Phred-scaled likelihoods for AA,AB,BB genotypes where A=ref and B=alt; not applicable if site is not biallelic">
+Keeping individuals in 'keep' list
+After filtering, kept 366 out of 989 Individuals
+Outputting VCF file...
+After filtering, kept 18654 out of a possible 18654 Sites
+Run Time = 25.00 seconds

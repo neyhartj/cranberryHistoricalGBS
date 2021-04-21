@@ -71,28 +71,28 @@ bcftools stats $VCFIN > $WD/snps/cranberryGBS_production_snps_prefilter_stats.ou
 ## Remove blank samples using the keyfile
 
 # First, find the appropriate column name in the keyfile
-COLS=1
-for i in $(head $KEYFILE -n 1) ; do
-      if [ $i == "FullSampleName" ] ; then
-        break ;
-    else
-        COLS=$(( $COLS + 1 ))
-    fi
-done
+# COLS=1
+# for i in $(head $KEYFILE -n 1) ; do
+#       if [ $i == "FullSampleName" ] ; then
+#         break ;
+#     else
+#         COLS=$(( $COLS + 1 ))
+#     fi
+# done
 
 # Cut the file for those sample names
-BLANKS=$(cut -f $COLS $KEYFILE | grep "BLANK\|blank" -)
+# BLANKS=$(cut -f $COLS $KEYFILE | grep "BLANK\|blank" -)
 
 # Capture the BLANK samples in a variable
 # THIS NEEDS TO BE CHANGED
-SAMPLESREMOVE=$(echo $BLANKS | sed 's/ / --remove-indv /g')
+# SAMPLESREMOVE=$(echo $BLANKS | sed 's/ / --remove-indv /g')
+
 
 # Use bcftools reheader to change the sample names, then pipe the output to vcftools for filtering
 echo -e "\nStarting VCF filtering."
 vcftools --vcf $VCFIN \
 	--remove-indels \
 	--remove-filtered-all \
-	--remove-indv ${SAMPLESREMOVE} \
 	--min-alleles 2 \
 	--max-alleles 2 \
         --not-chr UNKNOWN \
@@ -118,3 +118,6 @@ mv ${VCFOUT}.recode1.vcf $VCFOUT
 
 ## Run post-filtering stats
 bcftools stats $VCFOUT > $WD/snps/cranberryGBS_production_snps_postfilter_stats.out
+
+# Gzip the file
+gzip $VCFOUT
