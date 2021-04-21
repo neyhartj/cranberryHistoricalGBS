@@ -31,9 +31,12 @@ phased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/phased_mar
 
 sample_keys <- read_tsv(file = keyfile)
 
-sample_renames <- sample_keys %>% 
-  distinct(FullSampleName, GenotypeName) %>%
-  {setNames(object = .$GenotypeName, nm = .$FullSampleName)}
+# Distinct sample names
+distinct_sample_names <- sample_renames <- sample_keys %>% 
+  distinct(FullSampleName, GenotypeName)
+
+sample_renames <- setNames(object = distinct_sample_names$GenotypeName, 
+                           nm = distinct_sample_names$FullSampleName)
 
 
 
