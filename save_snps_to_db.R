@@ -20,10 +20,10 @@ cran_dir <- strsplit(proj_dir, "/")[[1]] %>%
 keyfile <- file.path(proj_dir, "input/cranberry_gbs_unique_keys_resolved_duplicates.txt")
 
 # Filepath of unphased genotype database
-unphased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/unphased_marker_genotype_db.RData")
+unphased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/unphased_marker_genotype_db")
 
 # Filepath of phased genotype database
-phased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/phased_marker_genotype_db.RData")
+phased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/phased_marker_genotype_db")
 
 
 
@@ -80,6 +80,12 @@ geno_hmp <- cbind(snp_info, gt3) %>%
   as_tibble()
 
 
+# Write a VCF
+write.vcf(x = vcf_in1, file = paste0(unphased_geno_db_file, ".vcf"))
+# Write a hmp file
+write_tsv(x = geno_hmp, path = paste0(unphased_geno_db_file, "_hmp.txt"))
+
+
 
 # Organize the phased VCF ---------------------------------------------------
 
@@ -91,33 +97,24 @@ vcf_in <- read.vcfR(file = filename)
 colmatch <- match(x = colnames(vcf_in@gt)[-1], table = names(sample_renames))
 colnames(vcf_in@gt)[-1] <- sample_renames[colmatch]
 
-# Save this VCF
-write.vcf(x = vcf_in, file = phased_geno_db_file, APPEND = TRUE)
+vcf_in1 <- vcf_in
 
-
-
-# Create genotype matrices / hapmap
-# Pull out the genotype data
-gt <- vcf_in1@gt[,-1]
-# Add marker names as row
-row.names(gt) <- vcf_in1@fix[,3]
-
-# Transpose
-gt2 <- t(gt)
+# Extract the gt as numeric
+genos <- extract.gt(x = vcf_in1, element = "GT", as.numeric = FALSE, return.alleles = FALSE, convertNA = TRUE)
 
 # Create a haplotype array (2 x m x n)
-haplo_array <- array(NA, dim = c(2, dim(gt)), dimnames = list(NULL, colnames(gt2), row.names(gt2)))
+haplo_array <- array(NA, dim = c(2, dim(genos)), dimnames = list(NULL, rownames(genos), colnames(genos)))
 
 # Iterate over samples
-for (i in seq_len(nrow(gt2))) {
-  geno <- gt2[i,]
-  haplo_array[,,i] <- t(apply(X = do.call("rbind", str_split(geno, "\\|")), MARGIN = 2, FUN = as.numeric))
+for (i in seq_len(ncol(genos))) {
+  entry <- genos[,i]
+  haplo_array[,,i] <- t(apply(X = do.call("rbind", str_split(entry, "\\|")), MARGIN = 2, FUN = as.numeric))
 }
 
 
 # Create a genotype matrix
 # Sum the number of reference alleles; subtract 1
-geno_mat <- t(apply(X = haplo_array, MARGIN = c(2,3), sum)) - 1
+geno_mat <- t(apply(X = haplo_array, MARGIN = c(2,3), sum))
 
 # Gather SNP metadata
 snp_info <- vcf_in1@fix %>%
@@ -130,8 +127,19 @@ snp_info <- vcf_in1@fix %>%
 
 # Combine into hapmap version
 geno_hmp <- cbind(snp_info, t(geno_mat)) %>%
-  remove_rownames()
+  remove_rownames() %>%
+  as_tibble()
 
-# Save everything
-save("haplo_array", "geno_mat", "geno_hmp", file = file.path(data_dir, "marker_data_mats.RData"))
+
+# Write a VCF
+write.vcf(x = vcf_in1, file = paste0(phased_geno_db_file, ".vcf"))
+# Write a hmp file
+write_tsv(x = geno_hmp, path = paste0(phased_geno_db_file, "_hmp.txt"))
+
+# Write an RData file
+phased_geno_hmp <- geno_hmp
+phased_geno_mat <- geno_mat
+phased_geno_haplo_array <- haplo_array
+save("phased_geno_hmp", "phased_geno_mat", "phased_geno_haplo_array",
+     file = paste0(phased_geno_db_file, ".RData"))
 
