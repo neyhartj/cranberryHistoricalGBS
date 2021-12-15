@@ -21,3 +21,5 @@ Details of the `scripts` folder. Scripts with a "run_" prefix are intended to be
 
 4. run_beagle_imputation.sh
 
+5. prepare_alphaFamImpute.R
+

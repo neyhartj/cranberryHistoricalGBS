@@ -97,7 +97,7 @@ sample_geno_identical1 <- sample_geno_identical %>%
 range(sample_geno_identical1$percent_identity)
 hist(sample_geno_identical1$percent_identity)
 
-# Subset pairs above 0.90
+# Subset pairs above 0.95
 sample_geno_similar <- sample_geno_identical1 %>%
   filter(percent_identity > 0.95) %>%
   arrange(individual, individual2) %>%

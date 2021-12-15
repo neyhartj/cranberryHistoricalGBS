@@ -18,7 +18,10 @@
 ## 
 ## TASSEL5 pipeline for cranberry GBS
 ## 
-## Whole discovery pipeline
+## Whole discovery and production pipeline
+## 
+## This version uses the keyfile corresponding to all unique entries, which have been grouped based
+## on ONLY information in the keyfile (i.e. explicitly duplicated sample names.)
 ## 
 ## 
 
@@ -35,7 +38,7 @@ module load bowtie2
 ## Set variables
 
 # Working directory
-WD=/project/cranberrygbs/cranberryHistoricalGBS/
+WD=/project/gifvl_vaccinium/cranberrygbs/cranberryHistoricalGBS/
 
 # Name of input directory
 INPUT=$WD/input
@@ -63,7 +66,11 @@ REFIND=/KEEP/cranberrygbs/genome_assemblies/Vm_BenLear_v2_bowtie_index/Vaccinium
 REF=/KEEP/cranberrygbs/genome_assemblies/Vaccinium_macrocarpon_BenLear_v2.fasta
 
 # Output stat file
-OUTFILE=$WD/stats/snpStats.txt
+STATSOUTFILE=$WD/stats/snpStats.txt
+
+# VCF Output file
+OUTFILE=$WD/snps/cranberryGBS_production_snps.vcf
+
 
 
 
@@ -134,12 +141,30 @@ run_pipeline.pl -Xms1G -Xmx48G -fork1 -DiscoverySNPCallerPluginV2 \
 # Execute the plugin
 run_pipeline.pl -Xms1G -Xmx48G -fork1 -SNPQualityProfilerPlugin \
 -db $DBNAME \
--statFile $OUTFILE \
+-statFile $STATSOUTFILE \
 -deleteOldData true \
 -endPlugin -runfork1
 
 
 ## This took 70 minutes for 13 flowcell-lanes
+
+
+## 
+## ProductionSNPCallerPluginV2
+## 
+## 
+
+
+# Execute the plugin
+run_pipeline.pl -Xms1G -Xmx48G -fork1 -ProductionSNPCallerPluginV2 \
+-db $DBNAME \
+-e EcoT22I \
+-i $FASTQDIR \
+-k $KEY \
+-kmerLength 64 \
+-do true \
+-o $OUTFILE \
+-endPlugin -runfork1
 
 
 
