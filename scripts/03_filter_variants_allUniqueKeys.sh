@@ -10,17 +10,18 @@ WD=/project/cranberrygbs/cranberryHistoricalGBS/
 INPUT=$WD/input
 
 # The complete filepath to the VCF file
-VCFIN=$WD/snps/cranberryGBS_production_snps.vcf
+VCFIN=$WD/snps/cranberryGBS_production_snps_allUniqueKeys.vcf
 
-# The desired name of the VCF file (including the .vcf extension)
+# The desired name of the output VCF file (including the .vcf extension)
 ## (e.g. '2row_GBS_filtered_snps.vcf')
-VCFOUT=$WD/snps/cranberryGBS_production_snps_filtered.vcf
+VCFOUT=$WD/snps/cranberryGBS_production_snps_allUniqueKeys_filtered.vcf
 
-# The keyfile produced in the demultiplexing step. Note: this file should
-## look like the following: Samples+barcode+ID_${PROJECT}.txt
-## One may provide multiple keyfiles, separated by a comma (',').
-#KEYFILE=$INPUT/cranberry_gbs_all_keys.txt
-KEYFILE=$INPUT/cranberry_gbs_unique_keys_resolved_duplicates.txt
+# The desired name of the pre-filter stats file
+PRESTATS=$WD/snps/cranberryGBS_production_snps_allUniqueKeys_prefilter_stats.out
+# The desired name of the post-filter stats file
+POSTSTATS=$WD/snps/cranberryGBS_production_snps_allUniqueKeys_postfilter_stats.out
+
+
 
 # You may change the filtering parameters below:
 # Note: by default, this filtering script will extract only biallelic 
@@ -65,7 +66,7 @@ module load vcftools
 cd $WD
 
 ## Run pre-filtering stats
-bcftools stats $VCFIN > $WD/snps/cranberryGBS_production_snps_prefilter_stats.out
+bcftools stats $VCFIN > $PRESTATS
 
 
 ## Remove blank samples using the keyfile
@@ -117,7 +118,7 @@ python $WD/scripts/filter_vcf_hets.py -i $VCFOUT -o ${VCFOUT}.recode1 -d $MinDP
 mv ${VCFOUT}.recode1.vcf $VCFOUT
 
 ## Run post-filtering stats
-bcftools stats $VCFOUT > $WD/snps/cranberryGBS_production_snps_postfilter_stats.out
+bcftools stats $VCFOUT > $POSTSTATS
 
 # Gzip the file
 gzip $VCFOUT
