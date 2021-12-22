@@ -429,6 +429,17 @@ new_keyfile <- bind_rows(keyfile_entries_unchanged, keyfile_entries_changed) %>%
 write_tsv(x = new_keyfile, file = file.path(proj_dir, "input/cranberry_gbs_unique_keys_resolved_duplicates.txt"))
 
 
+# Save a text file of germplasm collection individuals
+# First remove mapping population individuals
+mapping_population_seedLot_names <- genotyped_germplasm_metadata %>%
+  filter(individual %in% subset(germplasm_metadata, category == "MP", individual, drop = TRUE)) %>%
+  select(seed_lot = SeedLot)
 
-
+new_keyfile %>%
+  distinct(FullSampleName) %>%
+  separate(FullSampleName, c("seed_lot", "pred_id"), sep = ":", remove = FALSE) %>%
+  anti_join(., mapping_population_seedLot_names) %>%
+  select(FullSampleName) %>%
+  write_tsv(x = ., file = file.path(proj_dir, "input/cranberry_gbs_germplasm_collection_individuals.txt"), col_names = FALSE)
+  
 
