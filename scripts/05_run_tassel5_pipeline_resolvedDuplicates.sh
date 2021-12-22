@@ -8,7 +8,7 @@
 #SBATCH --ntasks-per-node=16   # 8 processor core(s) per node X 2 threads per core
 #SBATCH --mem=48G   # maximum memory per node
 #SBATCH --partition=short    # standard node(s)
-#SBATCH --job-name="tassel5_discovery_pipeline"
+#SBATCH --job-name="tassel5_discovery_production_pipeline_duplicatesResolved"
 #SBATCH --mail-user=jeffrey.neyhart@usda.gov   # email address
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
