@@ -3,12 +3,12 @@
 # SLURM parameters
 # job standard output will go to the file slurm-%j.out (where %j is the job ID)
 
-#SBATCH --time=04:00:00   # walltime limit (HH:MM:SS)
+#SBATCH --time=08:00:00   # walltime limit (HH:MM:SS)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --ntasks-per-node=16   # 8 processor core(s) per node X 2 threads per core
 #SBATCH --mem=48G   # maximum memory per node
 #SBATCH --partition=short    # standard node(s)
-#SBATCH --job-name="tassel5_discovery_pipeline"
+#SBATCH --job-name="tassel5_discovery_production_allUniqueKeys"
 #SBATCH --mail-user=jeffrey.neyhart@usda.gov   # email address
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
@@ -59,11 +59,11 @@ TAGFASTAUZ=$WD/tags/gbs_tags_for_alignment.fa
 SAMOUT=$WD/alignment/gbs_tags_aligned_BenLearv2.sam
 # SAMOUT1=$WD/alignment/gbs_tags_aligned_Stevensv1.sam
 # Basename of reference index
-REFIND=/KEEP/cranberrygbs/genome_assemblies/Vm_BenLear_v2_bowtie_index/Vaccinium_macrocarpon_BenLear_v2
+REFIND=/KEEP/gifvl_vaccinium/cranberrygbs/genome_assemblies/Vm_BenLear_v2_bowtie_index/Vaccinium_macrocarpon_BenLear_v2
 # REFIND1=/KEEP/cranberrygbs/genome_assemblies/Vm_Stevens_v1_bowtie_index/Vaccinium_macrocarpon_Stevens_v1
 
 # FASTA reference genome
-REF=/KEEP/cranberrygbs/genome_assemblies/Vaccinium_macrocarpon_BenLear_v2.fasta
+REF=/KEEP/gifvl_vaccinium/cranberrygbs/genome_assemblies/Vaccinium_macrocarpon_BenLear_v2.fasta
 
 # Output stat file
 STATSOUTFILE=$WD/stats/snpStats.txt

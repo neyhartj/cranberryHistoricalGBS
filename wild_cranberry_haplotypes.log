@@ -1,0 +1,29 @@
+PLINK v1.90b6.8 64-bit (15 Feb 2019)
+Options in effect:
+  --blocks no-pheno-req no-small-max-span
+  --blocks-max-kb 1000
+  --out wild_cranberry_haplotypes
+  --vcf wild_cranberry_cleaned_genotypes.vcf.gz
+
+Hostname: ceres19-compute-30.scinet.local
+Working directory: /lustre/project/gifvl_vaccinium/cranberrygbs/cranberryHistoricalGBS
+Start time: Tue Dec 21 08:38:43 2021
+
+Random number seed: 1640097523
+385587 MB RAM detected; reserving 192793 MB for main workspace.
+--vcf: wild_cranberry_haplotypes-temporary.bed +
+wild_cranberry_haplotypes-temporary.bim +
+wild_cranberry_haplotypes-temporary.fam written.
+4582 variants loaded from .bim file.
+111 people (0 males, 0 females, 111 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to wild_cranberry_haplotypes.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 111 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+4582 variants and 111 people pass filters and QC.
+Note: No phenotypes present.
+--blocks: 433 haploblocks written to wild_cranberry_haplotypes.blocks .
+Extra block details written to wild_cranberry_haplotypes.blocks.det .
+Longest span: 914.692kb.
+
+End time: Tue Dec 21 08:38:43 2021
