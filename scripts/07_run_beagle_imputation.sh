@@ -36,14 +36,14 @@ module load vcftools
 
 ## Set variables
 # Working directory
-WD=/project/cranberrygbs/cranberryHistoricalGBS/
+WD=/project/gifvl_vaccinium/cranberrygbs/cranberryHistoricalGBS/
 # Name of input directory
 INPUT=$WD/snps/
 # Output directory
 OUTPUT=$WD/imputation/beagle_imputation
 
 # Name of input vcf
-VCFIN=$INPUT/cranberryGBS_production_snps_filtered.vcf.gz
+VCFIN=$INPUT/cranberryGBS_production_snps_resolvedDuplicates_filtered.vcf.gz
 
 
 # Change working directory

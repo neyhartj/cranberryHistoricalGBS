@@ -5,7 +5,7 @@
 ##### Make changes below this line #####
 
 # Working directory
-WD=/project/cranberrygbs/cranberryHistoricalGBS/
+WD=/project/gifvl_vaccinium/cranberrygbs/cranberryHistoricalGBS/
 # Name of input directory
 INPUT=$WD/input
 
