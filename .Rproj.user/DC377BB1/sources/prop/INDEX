@@ -11,6 +11,8 @@
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Fscripts%2F02_run_tassel5_pipeline_allUniqueKeys.sh="80547317"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Fscripts%2F03_filter_variants_allUniqueKeys.sh="2258632C"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Fscripts%2F03_filter_variants_resolvedDuplicates.sh="047CABEA"
+~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Fscripts%2F04_resolve_sample_duplicates.R="7F7072D9"
+~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Fscripts%2F05_run_tassel5_pipeline_resolvedDuplicates.sh="6582ECDD"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Fscripts%2F06_filter_variants_resolvedDuplicates.sh="CF794842"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Fscripts%2FREADME.Md="FF91E9DB"
 ~%2FCranberryLab%2FGenotyping%2Fpre2021%2FcranberryHistoricalGBS%2Fscripts%2Fanalyze_imputation_testing.R="B70FF2A7"
