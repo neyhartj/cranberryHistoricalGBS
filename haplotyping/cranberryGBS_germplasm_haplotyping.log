@@ -1,0 +1,33 @@
+PLINK v1.90b6.8 64-bit (15 Feb 2019)
+Options in effect:
+  --blocks no-pheno-req
+  --blocks-max-kb 1000
+  --double-id
+  --out haplotyping/cranberryGBS_germplasm_haplotyping
+  --vcf /project/gifvl_vaccinium/cranberrygbs/cranberryHistoricalGBS//imputation/beagle_imputation//cranberryGBS_germplasm_imputed_snps.vcf.gz
+
+Hostname: ceres20-compute-63.scinet.local
+Working directory: /lustre/project/gifvl_vaccinium/cranberrygbs/cranberryHistoricalGBS
+Start time: Tue Dec 28 16:15:58 2021
+
+Random number seed: 1640729758
+385583 MB RAM detected; reserving 192791 MB for main workspace.
+--vcf: haplotyping/cranberryGBS_germplasm_haplotyping-temporary.bed +
+haplotyping/cranberryGBS_germplasm_haplotyping-temporary.bim +
+haplotyping/cranberryGBS_germplasm_haplotyping-temporary.fam written.
+9312 variants loaded from .bim file.
+361 people (0 males, 0 females, 361 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+haplotyping/cranberryGBS_germplasm_haplotyping.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 361 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+9312 variants and 361 people pass filters and QC.
+Note: No phenotypes present.
+--blocks: 1311 haploblocks written to
+haplotyping/cranberryGBS_germplasm_haplotyping.blocks .
+Extra block details written to
+haplotyping/cranberryGBS_germplasm_haplotyping.blocks.det .
+Longest span: 991.311kb.
+
+End time: Tue Dec 28 16:15:58 2021
