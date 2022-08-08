@@ -9,6 +9,7 @@
 library(tidyverse)
 library(vcfR)
 library(snps)
+library(readxl)
 
 proj_dir <- here::here()
 
@@ -25,36 +26,53 @@ cMMb <- read_csv(file = file.path(cran_dir, "Genotyping/GeneticMaps/genetic_phys
 marker_dir <- file.path(cran_dir, "Genotyping/MarkerDatabase/")
 
 # Set the keyfile name
-keyfile <- file.path(proj_dir, "input/cranberry_gbs_unique_keys_resolved_duplicates_notForTassel.txt")
+keyfile <- file.path(proj_dir, "input/cranberry_gbs_unique_keys_resolved_duplicates.txt")
+
+# Read in germplasm metadata
+germplasm_metadata <- read_excel(path = file.path(cran_dir, "Breeding/Germplasm/all_germplasm_metadata.xlsx"), col_types = "text") %>%
+  mutate_all(parse_guess)
+
+# Read in the genotyped germplasm metadata
+genotyped_germplasm_metadata <- read_excel(path = file.path(cran_dir, "Genotyping/MarkerDatabase/genotyped_germplasm_database.xlsx")) %>%
+  filter(marker_platform == "GBS")
+
+# select relevant columns from the germplasm metadata
+germplasm_metadata1 <- germplasm_metadata %>%
+  select(individual, unique_id, individual_name_use, alias, scar_alias, variety_designation, variety_selection_name,
+         maternal_parent, paternal_parent) %>%
+  # Split up any columns with commas
+  mutate(scar_alias = str_split(scar_alias, ", ")) %>%
+  # Subset those that have been genotyped (i.e. have a marker sample name)
+  inner_join(., genotyped_germplasm_metadata) %>%
+  # Remove NA FullSampleNames
+  filter(!is.na(FullSampleName)) %>%
+  arrange(FullSampleName, individual_name_use) %>%
+  # Remove duplicates
+  group_by(FullSampleName) %>%
+  slice(1) %>%
+  ungroup()
+
 
 # Filepath of unphased genotype database
 unphased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/unphased_marker_genotype_db")
 phased_geno_db_file <- file.path(cran_dir, "Genotyping/MarkerDatabase/phased_marker_genotype_db")
 
 
-# Read in the keyfile; create renaming dataframe --------------------------
-
-sample_keys <- read_tsv(file = keyfile)
-
-# Distinct sample names
-distinct_sample_names <- sample_renames <- sample_keys %>% 
-  distinct(FullSampleName, GenotypeName)
-
-sample_renames <- setNames(object = distinct_sample_names$GenotypeName, 
-                           nm = distinct_sample_names$FullSampleName)
-
-
-
 # Organize the unphased VCF -----------------------------------------------
 
-vcf_filename <- file.path(proj_dir, "snps/cranberryGBS_production_snps_filtered.vcf.gz")
+vcf_filename <- file.path(proj_dir, "snps/cranberryGBS_production_snps_resolvedDuplicates_filtered.vcf.gz")
 
 unphased_vcf_in <- read.vcfR(file = vcf_filename)
 
+# Rename samples
+unphased_vcf_sample_names <- tibble(FullSampleName = colnames(unphased_vcf_in@gt)[-1]) %>%
+  left_join(., distinct(germplasm_metadata1, FullSampleName, individual_name_use)) %>%
+  # Keep sample names if NA
+  mutate(individual_name_use = ifelse(is.na(individual_name_use), FullSampleName, individual_name_use))
 
-# Rename columns
-colmatch <- match(x = colnames(unphased_vcf_in@gt)[-1], table = names(sample_renames))
-colnames(unphased_vcf_in@gt)[-1] <- sample_renames[colmatch]
+
+# Rename columns - the DF is in the same order as the samples in the VCF
+colnames(unphased_vcf_in@gt)[-1] <- unphased_vcf_sample_names$individual_name_use
 
 vcf_in1 <- unphased_vcf_in
 
@@ -118,7 +136,7 @@ geno_hmp <- cbind(snp_info, gt5) %>%
 # Write a VCF
 write.vcf(x = vcf_in1, file = paste0(unphased_geno_db_file, ".vcf"))
 # Write a hmp file
-write_tsv(x = geno_hmp, path = paste0(unphased_geno_db_file, "_hmp.txt"))
+write_tsv(x = geno_hmp, file = paste0(unphased_geno_db_file, "_hmp.txt"))
 
 
 
@@ -133,9 +151,14 @@ write_tsv(x = geno_hmp, path = paste0(unphased_geno_db_file, "_hmp.txt"))
 filename <- file.path(proj_dir, "/imputation/beagle_imputation/cranberryGBS_germplasm_imputed_snps.vcf.gz")
 vcf_in <- read.vcfR(file = filename)
 
-# Rename columns
-colmatch <- match(x = colnames(vcf_in@gt)[-1], table = names(sample_renames))
-colnames(vcf_in@gt)[-1] <- sample_renames[colmatch]
+# Rename samples
+phased_vcf_sample_names <- tibble(FullSampleName = colnames(vcf_in@gt)[-1]) %>%
+  left_join(., distinct(germplasm_metadata1, FullSampleName, individual_name_use)) %>%
+  # Keep sample names if NA
+  mutate(individual_name_use = ifelse(is.na(individual_name_use), FullSampleName, individual_name_use))
+
+# Rename columns - the DF is in the same order as the samples in the VCF
+colnames(vcf_in@gt)[-1] <- phased_vcf_sample_names$individual_name_use
 
 vcf_in1 <- vcf_in
 
@@ -352,7 +375,7 @@ geno_mat <- t(apply(X = phased_geno_haplo_array_merged, MARGIN = c(2,3), sum))
 snp_info_phased <- filter(snp_info, marker %in% colnames(geno_mat))
 
 # Combine into hapmap version
-geno_hmp <- cbind(snp_info_phased, t(geno_mat)) %>%
+geno_hmp <- cbind(snp_info_phased, t(geno_mat)[snp_info_phased$marker,]) %>%
   remove_rownames() %>%
   as_tibble()
 

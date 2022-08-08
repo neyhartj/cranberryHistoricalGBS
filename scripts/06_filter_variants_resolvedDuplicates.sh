@@ -120,5 +120,25 @@ mv ${VCFOUT}.recode1.vcf $VCFOUT
 ## Run post-filtering stats
 bcftools stats $VCFOUT > $POSTSTATS
 
+
+## 
+## Depth statistics
+## 
+
+# Mean depth per individual
+OUTFILE=$(echo $VCFOUT | sed s/.vcf/_meanIndivDepth/g)
+vcftools --vcf $VCFOUT --depth --out $OUTFILE
+
+# Mean depth per site
+OUTFILE=$(echo $VCFOUT | sed s/.vcf/_meanSiteDepth/g)
+vcftools --vcf $VCFOUT --site-mean-depth --out $OUTFILE
+
+
+# Genotype depth
+OUTFILE=$(echo $VCFOUT | sed s/.vcf/_genoDepth/g)
+vcftools --vcf $VCFOUT --geno-depth --out $OUTFILE
+
+
+
 # Gzip the file
 gzip $VCFOUT
